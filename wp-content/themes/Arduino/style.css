@@ -310,11 +310,10 @@
     margin-top: 180px;
   }
 
-  a.blog span.title, a.things span.title, a.event span.title, a.Uncategorized span.title {
+  .page-home a.blog span.title,.page-home a.things span.title,.page-home a.event span.title,.page-home a.Uncategorized span.title {
     position: absolute;
     top: 45px;
     width: 250px;
-
   }
 
   .page-home  a.blog img,.page-home a.things img,.page-home a.event img{
@@ -625,13 +624,16 @@ font-size: .9em;
 
 
     .header-claim{
-  z-index: 100;
   position: absolute;
   top: 50px;
   max-width: 500px;
   text-align: left;
       }
 
+    .header-claim .subtitle{
+      color: #f1c40f;
+
+      }
         .header-claim strong{
   background-color: white;
   padding: 0px 4px;
@@ -640,11 +642,45 @@ font-size: .9em;
   line-height: 35px;
   font-weight: 600;
   font-size: 25px;
-    color: #E67E22;fea
+    color: #E67E22;
     }
 
 
 
+.team .name{
+  position: relative;
+  top: 278px;
+  right: 0px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.team .name span{
+  positio: ;
+  text-align: right;
+  background-color: #00979d;
+  color: #ffffff;
+}
+
+
+.rssfeed li {
+  margin-top:20px;
+}
+
+.rssfeed li > :first-child {
+  font-family: 'Typonine Sans Mono';
+      color: #E67E22;
+  font-size: 30px;
+  margin-top:20px;
+  word-wrap: break-word;
+}
+.rssfeed .columns{
+  padding:0px;
+}
+
+.rssfeed ul {
+ padding:0px;
+}
 
   /* very large */
   @media (min-width: 1150px) { 

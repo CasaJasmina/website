@@ -26,10 +26,9 @@ get_header(); ?>
 		<div class="header-claim">
 		<strong>
 			The open source way </br>to the connected home
-			</strong>
+		</strong>
 	</div>
 	</div>
-	<div>
 </div>
 
 
