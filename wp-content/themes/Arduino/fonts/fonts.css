@@ -1,0 +1,199 @@
+/*
+*   This is a reference CSS file containing all the web fonts used within the Arduino website + web applications. 
+*
+*   This specific file loads the web proof fonts (.eot .woff .svg) from an external source.
+*/
+
+
+/******************************** 
+******* TYPONINE SANS PRO *******
+********************************/
+
+/* TYPONINE SANS PRO - LIGHT */
+@font-face {
+    font-family: 'Typonine Sans Pro';
+    src: url("typoninesanspro-light-webfont.eot");
+    src: url("typoninesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanspro-light-webfont.woff") format("woff"), url("typoninesanspro-light-webfont.svg") format("svg");
+    font-weight: 100;
+    font-style: normal;
+}
+/* TYPONINE SANS PRO - LIGHT ITALIC */
+@font-face {
+    font-family: 'Typonine Sans Pro';
+    src: url("typoninesanspro-lightita-webfont.eot");
+    src: url("typoninesanspro-lightita-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanspro-lightita-webfont.woff") format("woff"), url("typoninesanspro-lightita-webfont.svg") format("svg");
+    font-weight: 100;
+    font-style: italic;
+}
+/* TYPONINE SANS PRO - REGULAR */
+@font-face {
+    font-family: 'Typonine Sans Pro';
+    src: url("typoninesanspro-regular-webfont.eot");
+    src: url("typoninesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanspro-regular-webfont.woff") format("woff"), url("typoninesanspro-regular-webfont.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+/* TYPONINE SANS PRO - REGULAR ITALIC */
+@font-face {
+    font-family: 'Typonine Sans Pro';
+    src: url("typoninesanspro-italic-webfont.eot");
+    src: url("typoninesanspro-italic-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanspro-italic-webfont.woff") format("woff"), url("typoninesanspro-italic-webfont.svg") format("svg");
+    font-weight: 400;
+    font-style: italic;
+}
+/* TYPONINE SANS PRO - TEXT */
+@font-face {
+    font-family: 'Typonine Sans Pro';
+    src: url("typoninesanspro-text-webfont.eot");
+    src: url("typoninesanspro-text-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanspro-text-webfont.woff") format("woff"), url("typoninesanspro-text-webfont.svg") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+/* TYPONINE SANS PRO - TEXT ITALIC */
+@font-face {
+    font-family: 'Typonine Sans Pro';
+    src: url("typoninesanspro-textita-webfont.eot");
+    src: url("typoninesanspro-textita-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanspro-textita-webfont.woff") format("woff"), url("typoninesanspro-textita-webfont.svg") format("svg");
+    font-weight: 500;
+    font-style: italic;
+}
+/* TYPONINE SANS PRO - MEDIUM */
+@font-face {
+    font-family: 'Typonine Sans Pro';
+    src: url("typoninesanspro-medium-webfont.eot");
+    src: url("typoninesanspro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanspro-medium-webfont.woff") format("woff"), url("typoninesanspro-medium-webfont.svg") format("svg");
+    font-weight: 600;
+    font-style: normal;
+}
+/* TYPONINE SANS PRO - MEDIUM ITALIC */
+@font-face {
+    font-family: 'Typonine Sans Pro';
+    src: url("typoninesanspro-mediumita-webfont.eot");
+    src: url("typoninesanspro-mediumita-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanspro-mediumita-webfont.woff") format("woff"), url("typoninesanspro-mediumita-webfont.svg") format("svg");
+    font-weight: 600;
+    font-style: italic;
+}
+/* TYPONINE SANS PRO - BOLD */
+@font-face {
+    font-family: 'Typonine Sans Pro';
+    src: url("typoninesanspro-bold-webfont.eot");
+    src: url("typoninesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanspro-bold-webfont.woff") format("woff"), url("typoninesanspro-bold-webfont.svg") format("svg");
+    font-weight: 800;
+    font-style: normal;
+}
+/* TYPONINE SANS PRO - BOLD ITALIC */
+@font-face {
+    font-family: 'Typonine Sans Pro';
+    src: url("typoninesanspro-boldita-webfont.eot");
+    src: url("typoninesanspro-boldita-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanspro-boldita-webfont.woff") format("woff"), url("typoninesanspro-boldita-webfont.svg") format("svg");
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+/******************************** 
+********* TYPONINE MONO *********
+********************************/
+
+/* TYPONINE MONO - LIGHT */
+@font-face {
+    font-family: 'Typonine Sans Mono';
+    src: url("typsansmono-light-webfont.eot");
+    src: url("typsansmono-light-webfont.eot?#iefix") format("embedded-opentype"), url("typsansmono-light-webfont.woff") format("woff"), url("typsansmono-light-webfont.svg") format("svg");
+    font-weight: 100;
+    font-style: normal;
+}
+/* TYPONINE MONO - LIGHT ITALIC */
+@font-face {
+    font-family: 'Typonine Sans Mono';
+    src: url("typsansmono-lightita-webfont.eot");
+    src: url("typsansmono-lightita-webfont.eot?#iefix") format("embedded-opentype"), url("typsansmono-lightita-webfont.woff") format("woff"), url("typsansmono-lightita-webfont.svg") format("svg");
+    font-weight: 100;
+    font-style: italic;
+}
+/* TYPONINE MONO - REGULAR */
+@font-face {
+    font-family: 'Typonine Sans Mono';
+    src: url("typsansmono-regular-webfont.eot");
+    src: url("typsansmono-regular-webfont.eot?#iefix") format("embedded-opentype"), url("typsansmono-regular-webfont.woff") format("woff"), url("typsansmono-regular-webfont.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+/* TYPONINE MONO - REGULAR ITALIC */
+@font-face {
+    font-family: 'Typonine Sans Mono';
+    src: url("typsansmono-regita-webfont.eot");
+    src: url("typsansmono-regita-webfont.eot?#iefix") format("embedded-opentype"), url("typsansmono-regita-webfont.woff") format("woff"), url("typsansmono-regita-webfont.svg") format("svg");
+    font-weight: 400;
+    font-style: italic;
+}
+/* TYPONINE MONO - TEXT */
+@font-face {
+    font-family: 'Typonine Sans Mono';
+    src: url("typsansmono-text-webfont.eot");
+    src: url("typsansmono-text-webfont.eot?#iefix") format("embedded-opentype"), url("typsansmono-text-webfont.woff") format("woff"), url("typsansmono-text-webfont.svg") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+/* TYPONINE MONO - TEXT ITALIC */
+@font-face {
+    font-family: 'Typonine Sans Mono';
+    src: url("typsansmono-textita-webfont.eot");
+    src: url("typsansmono-textita-webfont.eot?#iefix") format("embedded-opentype"), url("typsansmono-textita-webfont.woff") format("woff"), url("typsansmono-textita-webfont.svg") format("svg");
+    font-weight: 500;
+    font-style: italic;
+}
+/* TYPONINE MONO - MEDIUM */
+@font-face {
+    font-family: 'Typonine Sans Mono';
+    src: url("typsansmono-medium-webfont.eot");
+    src: url("typsansmono-medium-webfont.eot?#iefix") format("embedded-opentype"), url("typsansmono-medium-webfont.woff") format("woff"), url("typsansmono-medium-webfont.svg") format("svg");
+    font-weight: 600;
+    font-style: normal;
+}
+/* TYPONINE MONO - MEDIUM ITALIC */
+@font-face {
+    font-family: 'Typonine Sans Mono';
+    src: url("typsansmono-mediumita-webfont.eot");
+    src: url("typsansmono-mediumita-webfont.eot?#iefix") format("embedded-opentype"), url("typsansmono-mediumita-webfont.woff") format("woff"), url("typsansmono-mediumita-webfont.svg") format("svg");
+    font-weight: 600;
+    font-style: italic;
+}
+/* TYPONINE MONO - BOLD */
+@font-face {
+    font-family: 'Typonine Sans Mono';
+    src: url("typsansmono-bold-webfont.eot");
+    src: url("typsansmono-bold-webfont.eot?#iefix") format("embedded-opentype"), url("typsansmono-bold-webfont.woff") format("woff"), url("typsansmono-bold-webfont.svg") format("svg");
+    font-weight: 800;
+    font-style: normal;
+}
+/* TYPONINE MONO - BOLD ITALIC */
+@font-face {
+    font-family: 'Typonine Sans Mono';
+    src: url("typsansmono-boldita-webfont.eot");
+    src: url("typsansmono-boldita-webfont.eot?#iefix") format("embedded-opentype"), url("typsansmono-boldita-webfont.woff") format("woff"), url("typsansmono-boldita-webfont.svg") format("svg");
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+/******************************** 
+** TYPONINE SANS CONDENSED PRO **
+********************************/
+
+/* TYPONINE SANS CONDENSED PRO - LIGHT */
+@font-face {
+    font-family: 'Typonine Sans Condensed Pro';
+    src: url("typoninesanscondpro-light-webfont.eot");
+    src: url("typoninesanscondpro-light-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanscondpro-light-webfont.woff") format("woff"), url("typoninesanscondpro-light-webfont.svg") format("svg");
+    font-weight: 100;
+    font-style: normal;
+}
+/* TYPONINE SANS CONDENSED PRO - TEXT */
+@font-face {
+    font-family: 'Typonine Sans Condensed Pro';
+    src: url("typoninesanscondpro-text-webfont.eot");
+    src: url("typoninesanscondpro-text-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanscondpro-text-webfont.woff") format("woff"), url("typoninesanscondpro-text-webfont.svg") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
