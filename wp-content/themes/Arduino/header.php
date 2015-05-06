@@ -41,10 +41,13 @@
 		    <div class="row header full-width">
 		      <div class="small-10 medium-10 large-2 columns">
 		        
+		        <!-- those are needed if we want to change wedsite title and claim from the theme admin panel
+
 		        <?php if ( get_theme_mod( 'arduino_logo' ) ) : ?>
 				    <div class='site-logo'>
-				        <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'arduino_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
-				    	<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'arduino_small_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+				      <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'arduino_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+				      <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'arduino_small_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+				    
 				    </div>
 				<?php else : ?>
 				    <hgroup>
@@ -52,6 +55,15 @@
 				        <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
 				    </hgroup>
 				<?php endif; ?>
+
+				-->
+
+
+				   <div class='site-logo'>
+				      <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo bloginfo('template_directory').'/images/logo.png'; ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+				      <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo bloginfo('template_directory').'/images/logo-small.png'; ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+				    
+				    </div>
 		        
 		      </div>
 		      <div class="open-mobile-menu small-2 medium-2 columns"><div class="vertical-space"></div><span class="mobile-menu"></span></div>
