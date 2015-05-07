@@ -34,9 +34,12 @@ jQuery(document).ready(function() {
 
 	// toggle submenu
 	jQuery('.menu-item-has-children').on('click', function(event) {
-		event.preventDefault();
+		console.log("cliccato");
+		//ßevent.preventDefault();
 		jQuery(this).find('.sub-menu').slideToggle();
 		jQuery(this).find('.mobile-toggle').toggleClass('open');
 	});
+
+
 
 });
