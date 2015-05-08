@@ -20,7 +20,7 @@ get_header(); ?>
 
 
 	<div class="columns small-12 medium-12 large-12 header-img">
-		<img src="//sandbox.arduino.cc/casajasmina-dev/wp-content/uploads/2015/04/header-image-temporary.jpg" width="" height="" style=""/>
+	<img src='<?php echo bloginfo('template_directory').'/images/header1.jpg'; ?>' />
 	
 		<div class="row ">
 		<div class="header-claim">
