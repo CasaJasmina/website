@@ -790,6 +790,10 @@ input:-ms-input-placeholder {
 font-weight:300;
 }
 
+.error-message{
+  color: #da5b4a;
+}
+/*
 .ss-form .ss-q-checkbox:checked + label {
   background-image: url("images/Checkbox_checked.svg");
   background-position: center top;
@@ -800,8 +804,9 @@ font-weight:300;
   padding: 12px;
   display: inline-block;
   margin-right: 0.5em;
-  /*vertical-align: middle; */
+  
 }
+*/
 input[type="checkbox"]  {
   vertical-align: middle;
 }
