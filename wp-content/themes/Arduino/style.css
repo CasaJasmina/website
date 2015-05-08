@@ -24,6 +24,12 @@
   text-decoration: none;
   color: #00979d;
 }
+ul li {
+    background-image: url(sqpurple.gif);
+    background-repeat: no-repeat;
+    background-position: 0px center; 
+    padding-left: 15px; 
+}
 
 .sticky {
   position: fixed;
@@ -231,7 +237,7 @@
     color: #fff;
     border: 0;
     box-shadow: 0 6px #005c5f;
-    padding-top: 11px 10px 0px 10px ;
+    padding: 11px 10px 7px 10px ;
     -webkit-transition: all ease-out .1s;
     -moz-transition: all ease-out .1s;
     -o-transition: all ease-out .1s;
