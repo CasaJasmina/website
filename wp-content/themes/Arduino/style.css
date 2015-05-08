@@ -28,7 +28,6 @@ ul li {
     background-image: url(sqpurple.gif);
     background-repeat: no-repeat;
     background-position: 0px center; 
-    padding-left: 15px; 
 }
 
 .sticky {
@@ -701,6 +700,7 @@ font-size: .9em;
 
 .form{
   background-color: #ecf1f1;
+  padding-right: 40px;
 }
 
 .ss-form {
