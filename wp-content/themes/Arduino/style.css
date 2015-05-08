@@ -7,7 +7,7 @@
 
   body{
     font-family: "Typonine Sans Pro";
-    color: #2c353a;
+    color: #4E5B61;
     font-size: 19px;
     line-height: 1.625;
   }
@@ -215,7 +215,10 @@
     cursor: pointer;
   }
 
-  .button, .button:focus, .button.disabled, .button[disabled] {
+.ss-top-of-page{
+  display: none;
+}
+  .button, .button:focus, .button.disabled, .button[disabled], .jfk-button, .jfk-button:focus, .jfk-button.disabled, .jfk-button[disabled] {
     top: 0;
     position: relative;
     height: 38px;
@@ -228,7 +231,7 @@
     color: #fff;
     border: 0;
     box-shadow: 0 6px #005c5f;
-    padding-top: 11px;
+    padding-top: 11px 10px 0px 10px ;
     -webkit-transition: all ease-out .1s;
     -moz-transition: all ease-out .1s;
     -o-transition: all ease-out .1s;
@@ -236,7 +239,7 @@
     border-radius: 2px 2px 0 0;
   }
 
-  .button:hover {
+  .button:hover, .jfk-button:hover{
     top: 2px;
     box-shadow: 0 4px #005c5f;
     background-color: #00979d;
@@ -681,6 +684,118 @@ font-size: .9em;
 .rssfeed ul {
  padding:0px;
 }
+
+
+/* this is all for the form */
+
+.form{
+  background-color: #ecf1f1;
+}
+
+.ss-form {
+  font-size: 15px;
+}
+
+.ss-form label{
+  width: 30%;
+}
+
+.ss-form .ss-form-entry{
+  width: 100%;
+  margin-top:20px;
+}
+
+
+ .ss-form div.ss-form-entry>input {
+  font-family: 'Typonine Sans Pro';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #374146;
+  background-color: white;
+  height: 35px;
+  width: 254px;
+  border:none;
+}
+
+ .ss-form div.ss-form-entry>textarea {
+  font-family: 'Typonine Sans Pro';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #374146;
+  background-color: white;
+  height: 45px;
+  width: 100%;
+  border:none;
+}
+
+
+
+input::-webkit-input-placeholder {
+  font-size: 12px;
+  color: #7f8c8d;
+  font-style: italic;
+}
+input::-moz-placeholder {
+  font-size: 12px;
+  color: #7f8c8d;
+  font-style: italic;
+}
+input:-moz-placeholder {
+  /* Older versions of Firefox */
+  font-size: 12px;
+  color: #7f8c8d;
+  font-style: italic;
+}
+input:-ms-input-placeholder {
+  font-size: 12px;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.ss-form .ss-section-title {
+  color: #9e846d;
+  font-family: 'Typonine Sans Pro';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+
+}
+
+.ss-form .ss-q-title {
+  font-family: 'Typonine Sans Pro';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  color: #374146;
+  margin-top: 2em;
+  letter-spacing: 1px;
+}
+
+.ss-form .ss-choice-label {
+font-weight:300;
+}
+
+.ss-form .ss-q-checkbox:checked + label {
+  background-image: url("images/Checkbox_checked.svg");
+  background-position: center top;
+}
+.ss-form .ss-q-checkbox + label {
+  background-image: url("images/Checkbox_unchecked.svg");
+  background-position: center bottom;
+  padding: 12px;
+  display: inline-block;
+  margin-right: 0.5em;
+  /*vertical-align: middle; */
+}
+input[type="checkbox"]  {
+  vertical-align: middle;
+}
+
+
 
   /* very large */
   @media (min-width: 1150px) { 
