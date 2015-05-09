@@ -5,6 +5,7 @@
   Author: Stefania - Lorenzo
   */
 
+
   body{
     font-family: "Typonine Sans Pro";
     color: #4E5B61;
@@ -327,6 +328,8 @@ ul li {
     position: absolute;
     top: 45px;
     width: 250px;
+    left:18px;
+
   }
 
   .page-home  a.blog img,.page-home a.things img,.page-home a.event img{
