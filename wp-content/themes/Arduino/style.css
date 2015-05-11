@@ -253,8 +253,9 @@ ul li {
   }
 
   @-moz-document url-prefix() {
+    
     ul.menu {
-      height: auto;
+      height: 47px !important;
     }
 
     li.menu-item a {
