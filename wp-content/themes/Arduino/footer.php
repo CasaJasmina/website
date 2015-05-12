@@ -63,12 +63,12 @@
 	  			<div class="large-4 medium-4 columns">
 	  				<ul id="arduinoSocialLinks" class="arduino-social-links">
 	  					<li>
-	  						<a href="https://twitter.com/arduino" target="_blank">
+	  						<a href="https://twitter.com/casajasmina" target="_blank">
 	  							<img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png">
 	  						</a>
 	  					</li>
 	  					<li>
-	  						<a href="http://www.facebook.com/official.arduino" target="_blank">
+	  						<a href="https://www.facebook.com/casajasmina.to" target="_blank">
 	  							<img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png">
 	  						</a>
 	  					</li>
