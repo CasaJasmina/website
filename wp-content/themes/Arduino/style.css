@@ -910,7 +910,8 @@ input[type="checkbox"]  {
     }
 
     ul.sub-menu li.menu-item {
-      width: 200px;
+      width: 250px;
+      background: white;
     }
 
     ul.sub-menu li.menu-item a span {
