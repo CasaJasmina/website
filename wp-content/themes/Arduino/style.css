@@ -580,6 +580,10 @@ ul li {
     margin-top: 50px;
   }
 
+  .columns:last-child{
+    float:left !important;
+  }
+
   .inline-list {
     margin: 0 0 1.0625rem -1.375rem;
     padding: 0;

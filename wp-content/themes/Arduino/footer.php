@@ -26,16 +26,43 @@
 			      <div class="row">
 
 			        <div class="large-3 columns sponsor-logo">
-			          <a href="http://www.arduino.cc" target="_blank"> <img src="http://sandbox.arduino.cc/casajasmina-dev/wp-content/uploads/2015/04/Arduino_logo.png"></a>
+			          <a href="http://www.arduino.cc" target="_blank"> 
+			          <img src="<?php echo get_template_directory_uri(); ?>/images/sponsor_logos/arduino.png">
+
+			          </a>
 			        </div>
 
 			        <div class="large-3 columns sponsor-logo">
-			          <a href="http://www.toolboxoffice.it" target="_blank">  <img src="http://sandbox.arduino.cc/casajasmina-dev/wp-content/uploads/2015/04/logo_toolbox.png"></a>
+			          <a href="http://www.toolboxoffice.it" target="_blank">  
+			          <img src="<?php echo get_template_directory_uri(); ?>/images/sponsor_logos/toolbox.png">
+			          </a>
+			        </div> 
+			      </div>
+
+
+ 					<div class="row">
+			        <div class="small-12 large-6 columns ">
+			          <p class="headlines">
+			            Supported by
+			          </p>
+			        </div>
+			       </div>
+			      
+			      <div class="row">
+
+					<div class="large-3 columns sponsor-logo margin-top">
+			          <a href="http://www.valcucine.com" target="_blank"> 
+			          <img src="<?php echo get_template_directory_uri(); ?>/images/sponsor_logos/valcucine.png">
+			           </a>
 			        </div> 
 
-			        <div class="large-6 columns sponsor-logo margin-top">
-			          <a href="http://www.energy-home.it" target="_blank">  <img src="http://sandbox.arduino.cc/casajasmina-dev/wp-content/uploads/2015/04/energy@home_logo.png"></a>
+			        <div class="large-3 columns sponsor-logo margin-top">
+			          <a href="http://www.energy-home.it" target="_blank"> 
+			          <img src="<?php echo get_template_directory_uri(); ?>/images/sponsor_logos/energyAtHome.png">
+			           </a>
 			        </div> 
+
+					</div>
 
 			      </div>
 
