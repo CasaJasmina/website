@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-
-
 <div id="content" class= "page page-posts">
 
   <div class="row">
@@ -23,7 +21,7 @@
 
   if ( have_posts() ) {
 
-    ?>      
+    ?>
 
     <?php while ( have_posts() ) : the_post();
 
@@ -39,18 +37,18 @@
 
           <span class="entry-date"><?php echo get_the_date(); ?></span>
           <span class="entry-author"><?php echo  "by ".get_the_author(); ?> </span>
-          
+
         </span>
 
 
 
-        <a href="<?php echo get_permalink() ?>"  
+        <a href="<?php echo get_permalink() ?>"
           class="<?php foreach ($categories as $cat){ echo($cat->cat_name). " "; } ?>
           ">
 
           <?php
           if ( has_post_thumbnail() ) {
-            echo the_post_thumbnail( 'thumbnail-big' ); 
+            echo the_post_thumbnail( 'thumbnail-big' );
           }
           ?>
 
@@ -81,10 +79,10 @@
     <div class="columns small-12 medium-12 large-9 post-list ">
       <?php /*
       <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-      <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>    
+      <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
       */?>
 
-      <?php arduino_paging_nav(); ?> 
+      <?php arduino_paging_nav(); ?>
 </div>
 
 

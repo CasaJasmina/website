@@ -34,7 +34,7 @@ set_post_thumbnail_size( 200, 200, true );
 
 
 /*  Thumbnail upscale
-/* ------------------------------------ */ 
+/* ------------------------------------ */
 function alx_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, $crop ){
     if ( !$crop ) return null; // let the wordpress default function handle this
 
@@ -94,7 +94,7 @@ endif;
  * @since Casa Jasmina 1.0
  */
 function arduino_scripts_styles() {
-	
+
 	// Add Arduino fonts, used in the main stylesheet.
 	wp_enqueue_style( 'arduino-fonts', get_template_directory_uri() . '/fonts/fonts.css', array(), null );
 
@@ -110,7 +110,7 @@ function arduino_scripts_styles() {
 	// Loads Arduino custom js scripts
 	// wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.js', array(), '2015-04-10', true );
 	// wp_enqueue_script( 'foundation', get_template_directory_uri() . '/js/foundation.min.js', array('jquery'), '2015-04-10', true );
-	
+
 	wp_enqueue_script( 'arduino-scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '2015-04-10', true );
 
 	// Loads the Internet Explorer specific stylesheet.
@@ -133,7 +133,7 @@ function arduino_theme_customizer( $wp_customize ) {
 		) );
 
 	$wp_customize->add_setting( 'arduino_logo' );
-	
+
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'arduino_logo', array(
 		'label'    => __( 'Logo', 'arduino' ),
 		'section'  => 'arduino_logo_section',
@@ -147,7 +147,7 @@ function arduino_theme_customizer( $wp_customize ) {
 		) );
 
 	$wp_customize->add_setting( 'arduino_small_logo' );
-	
+
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'arduino_small_logo', array(
 		'label'    => __( 'Small Logo', 'arduino' ),
 		'section'  => 'arduino_small_logo_section',
@@ -169,7 +169,7 @@ function web2feel_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 		));
-	
+
 	register_sidebar(array(
 		'name' => 'Footer',
 		'id' => 'footer',
@@ -177,7 +177,7 @@ function web2feel_widgets_init() {
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="bothead">',
 		'after_title' => '</h3>',
-		));	
+		));
 
 	register_sidebar( array(
 		'name'          => 'top Banner Area',
@@ -240,7 +240,7 @@ class Nav_Walker_Nav_Menu extends Walker_Nav_Menu {
 				$item_output .= '<a href="#" class="userAvatar"><img src="'.$avatar.'" alt="userpicture"/></a><ul id="logout" class="dropdown-logout"><li><a class="logout" href="'.esc_url( wp_logout_url()).'">Sign out</a></li></ul>';
 			} else {
 				$item_output .= '<a'. $attributes .'><span>';
-				$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after . '</span>';	
+				$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after . '</span>';
 
 				if ( 'primary' == $args->theme_location ) {
 					$submenus = 0 == $depth || 1 == $depth ? get_posts( array( 'post_type' => 'nav_menu_item', 'numberposts' => 1, 'meta_query' => array( array( 'key' => '_menu_item_menu_item_parent', 'value' => $item->ID, 'fields' => 'ids' ) ) ) ) : false;
@@ -342,7 +342,7 @@ function arduino_post_nav() {
 		return;
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		
+
 		<?php
 
 		/*<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'arduino' ); ?></h1>*/
@@ -433,6 +433,3 @@ function arduino_entry_date( $echo = true ) {
 	return $date;
 }
 endif;
-
-
-

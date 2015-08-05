@@ -4,8 +4,8 @@
  * Plugin URI: http://cj_basic.com/widget
  * Description: A widget that serves as an cj_basic for developing more advanced widgets.
  * Version: 0.1
- * Author: Justin Tadlock
- * Author URI: http://justintadlock.com
+ * Author: Lorenzo Romagnoli
+ * Author URI: casajasmina.arduino.cc
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -14,22 +14,71 @@
 
 
 
-//here I create a custom post type that has a featured image
 
 
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
-  register_post_type( 'event',
-    array(
-      'labels' => array(
-        'name' => __( 'Events' ),
-        'singular_name' => __( 'Event' )
-      ),
-      'public' => true,
-      'has_archive' => true,
-    )
-  );
+function project_post_type() {
+
+// Set UI labels for Custom Post Type
+	$labels = array(
+		'name'                => _x( 'Projects', 'Post Type General Name'  ),
+		'singular_name'       => _x( 'Project', 'Post Type Singular Name' ),
+		'menu_name'           => __( 'Projects' ),
+		'all_items'           => __( 'All Projets' ),
+		'view_item'           => __( 'View Project' ),
+		'add_new_item'        => __( 'Add New Project' ),
+		'add_new'             => __( 'Add New' ),
+		'edit_item'           => __( 'Edit Project' ),
+		'update_item'         => __( 'Update Project' ),
+		'search_items'        => __( 'Search Project' ),
+		'not_found'           => __( 'Not Found' ),
+		'not_found_in_trash'  => __( 'Not found in Trash' ),
+	);
+
+// Set other options for Custom Post Type
+
+	$args = array(
+		'label'               => __( 'projects' ),
+		'description'         => __( 'Project news and reviews' ),
+		'labels'              => $labels,
+		'taxonomies' => array('category'),
+		// Features this CPT supports in Post Editor
+		'supports'            => array( 'thumbnail', 'comments', 'revisions', 'title' ),
+		// You can associate this CPT with a taxonomy or custom taxonomy.
+		/* A hierarchical CPT is like Pages and can have
+		* Parent and child items. A non-hierarchical CPT
+		* is like Posts.
+		*/
+		'hierarchical'        => true,
+    'query_var'           => true,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+	);
+
+	// Registering your Custom Post Type
+	register_post_type( 'projects', $args );
+
 }
+
+/* Hook into the 'init' action so that the function
+* Containing our post type registration is not
+* unnecessarily executed.
+*/
+
+add_action( 'init', 'project_post_type', 0 );
+
+
+
+
+
 
 
 /**
@@ -95,7 +144,7 @@ class CJ_Custom_Widget extends WP_Widget {
 
 		/* Display the widget title if one was input (before and after defined by themes). */
 		if ( $html ){
-			echo ("<div class='columns small-12 medium-6 large-" . $size . "'>" . $html . "</div>");	
+			echo ("<div class='columns small-12 medium-6 large-" . $size . "'>" . $html . "</div>");
 		}
 		/* After widget (defined by themes). */
 	//	echo $after_widget;
@@ -134,16 +183,16 @@ class CJ_Custom_Widget extends WP_Widget {
 			<input id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" style="width:100%;" />
 		</p>
 
-		
+
 		<!-- Widget html: Text area -->
 		<p>
 			<label for="<?php echo $this->get_field_id( 'html' ); ?>"><?php _e('html:', 'hybrid'); ?></label>
-			<textarea 
+			<textarea
 				class="widefat"
 				rows="16"
-				cols="20" 
-				id="<?php echo $this->get_field_id( 'html' ); ?>" 
-				name="<?php echo $this->get_field_name( 'html' ); ?>" 
+				cols="20"
+				id="<?php echo $this->get_field_id( 'html' ); ?>"
+				name="<?php echo $this->get_field_name( 'html' ); ?>"
 				style="width:100%;" >
 			<?php echo $instance['html']; ?>
 			</textarea>
@@ -154,41 +203,31 @@ class CJ_Custom_Widget extends WP_Widget {
 
 		<p>
 			<label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e('Size:', 'hybrid'); ?></label>
-			<input 
-				type="number"  
-				min="3" 
-				max="4" 
-				id="<?php echo $this->get_field_id( 'size' ); ?>" 
-				name="<?php echo $this->get_field_name( 'size' ); ?>" 
+			<input
+				type="number"
+				min="3"
+				max="4"
+				id="<?php echo $this->get_field_id( 'size' ); ?>"
+				name="<?php echo $this->get_field_name( 'size' ); ?>"
 				value="<?php echo $instance['size']; ?>" />
 		</p>
 
 		<!-- backgound color -->
-	
+
 
 		<p>
 			<label for="<?php echo $this->get_field_id( 'color' ); ?>"><?php _e('Color:', 'hybrid'); ?></label>
-			<input 
-				id="<?php echo $this->get_field_id( 'color' ); ?>" 
-				name="<?php echo $this->get_field_name( 'color' ); ?>" 
-				value="<?php echo $instance['color']; ?>" 
+			<input
+				id="<?php echo $this->get_field_id( 'color' ); ?>"
+				name="<?php echo $this->get_field_name( 'color' ); ?>"
+				value="<?php echo $instance['color']; ?>"
 				style="width:30%;" />
-		</p>	
+		</p>
 
 
-		
+
 
 	<?php
 	}
 }
-
-
-
-
-
-
-
-
-
-
 ?>

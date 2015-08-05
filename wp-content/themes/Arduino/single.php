@@ -9,9 +9,6 @@
 
 get_header(); ?>
 
-
-
-
 <div id="content" class= "page single">
 
 	<div class="row">
@@ -43,13 +40,13 @@ get_header(); ?>
   ?>
 
 
-  <a href="<?php echo get_permalink() ?>"  
+  <a href="<?php echo get_permalink() ?>"
   	class="<?php foreach ($categories as $cat){ echo($cat->cat_name). " "; } ?>
   	">
 
   	<?php
   	if ( has_post_thumbnail() ) {
-  		echo the_post_thumbnail( 'thumbnail-big' ); 
+  		echo the_post_thumbnail( 'thumbnail-big' );
   	}
   	?>
 
@@ -110,7 +107,7 @@ get_header(); ?>
 
 				<div class="navigation singlePost">
 
-					<?php arduino_post_nav(); ?> 
+					<?php arduino_post_nav(); ?>
 
 				</div>
 

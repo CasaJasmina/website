@@ -14,14 +14,14 @@
 get_header(); ?>
 
 
-<div id="content" class="page-home">
+<div id="content" class="page-boxes page-home">
 
 	<!-- this is the mega image that stays on top -->
 
 
 	<div class="columns small-12 medium-12 large-12 header-img">
 	<img src='<?php echo bloginfo('template_directory').'/images/header1.jpg'; ?>' />
-	
+
 		<div class="row ">
 		<div class="header-claim">
 		<strong>
@@ -58,11 +58,11 @@ get_header(); ?>
 $the_query = new WP_Query( 'category_name=featured&post_per_page=4');
 
 if ( $the_query->have_posts() ) {
-	
-	?>			
+
+	?>
 	<div>
 		<div id="first-post-row" class="row" > <?php
-		$i = 0; 
+		$i = 0;
 		while ( $the_query->have_posts() && $i<4) {
 			$i++;
 			$the_query->the_post();
@@ -73,13 +73,13 @@ if ( $the_query->have_posts() ) {
 			?>
 			<div class="columns small-12 medium-6 large-3 banner">
 
-				<a href="<?php echo get_permalink() ?>"  
+				<a href="<?php echo get_permalink() ?>"
 					class="<?php foreach ($categories as $cat){ echo($cat->cat_name). " "; } ?>
 					">
 
 					<?php
 					if ( has_post_thumbnail() ) {
-						echo the_post_thumbnail( 'thumbnail-front' ); 
+						echo the_post_thumbnail( 'thumbnail-front' );
 					}
 					?>
 
@@ -96,8 +96,8 @@ if ( $the_query->have_posts() ) {
 		}
 
 	}
-	?>   </div>  
-</div>   
+	?>   </div>
+</div>
 
 <?php
 
@@ -133,11 +133,11 @@ wp_reset_postdata();
 $the_query = new WP_Query( 'category_name=featured&post_per_page=4&offset=4');
 
 if ( $the_query->have_posts() ) {
-	
-	?>			
+
+	?>
 	<div>
 		<div id="first-post-row" class="row" > <?php
-		$i = 0; 
+		$i = 0;
 		while ( $the_query->have_posts() && $i<4) {
 			$i++;
 			$the_query->the_post();
@@ -148,18 +148,18 @@ if ( $the_query->have_posts() ) {
 			?>
 			<div class="columns small-12 medium-6 large-3 banner">
 
-				<a href="<?php echo get_permalink() ?>"  
+				<a href="<?php echo get_permalink() ?>"
 					class="
-					<?php 
+					<?php
 					foreach ($categories as $cat){
 						echo($cat->cat_name). " ";
-					} 
+					}
 					?>
 					">
 
 					<?php
 					if ( has_post_thumbnail() ) {
-						echo the_post_thumbnail( 'thumbnail-front' ); 
+						echo the_post_thumbnail( 'thumbnail-front' );
 					}
 					?>
 
@@ -176,8 +176,8 @@ if ( $the_query->have_posts() ) {
 		}
 
 	}
-	?>   </div>  
-</div>   
+	?>   </div>
+</div>
 
 <?php
 
