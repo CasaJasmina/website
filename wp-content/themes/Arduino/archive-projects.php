@@ -20,7 +20,7 @@ get_header(); ?>
 
 	<div class="columns small-12 medium-12 large-12 header-img">
 
-		<img src='<?php echo bloginfo('template_directory').'/images/things-header.jpg'; ?>' />
+		<img class="wide-image" src='<?php echo bloginfo('template_directory').'/images/things-header.jpg'; ?>' />
 
 		<div class="row ">
 			<div class="header-content">

@@ -12,7 +12,6 @@
  */
 
 get_header(); ?>
-questa è la default page
 <div id="content" class= "page page-posts">
 
 

@@ -20,7 +20,7 @@ get_header(); ?>
 
 	<div class="columns small-12 medium-12 large-12 header-img">
 
-		<img src='<?php echo bloginfo('template_directory').'/images/things-header.jpg'; ?>' />
+		<img class="wide-image" src='<?php echo bloginfo('template_directory').'/images/things-header.jpg'; ?>' />
 
 		<div class="row ">
 			<div class="header-content">
@@ -39,16 +39,14 @@ get_header(); ?>
 						</a>
 					</div>
 					<div class="columns small-2 medium-2 large-4 category">
-						<a href="<?php echo site_url(); ?>
-/category/furniture/">
+						<a href="<?php echo site_url(); ?>/category/furniture/">
 							<img src='<?php echo bloginfo('template_directory').'/images/furniture.png'; ?>' />
 						</a>
 						<div class="category-name"><span>furnitures</span></div>
 
 					</div>
 					<div class="columns small-2 medium-2 large-4 category">
-						<a href="<?php echo site_url(); ?>
-/category/art/">
+						<a href="<?php echo site_url(); ?>/category/art/">
 							<img src='<?php echo bloginfo('template_directory').'/images/art.png'; ?>' />
 							<div class="category-name"><span>art pieces</span></div>
 						</a>
@@ -57,16 +55,14 @@ get_header(); ?>
 						.
 					</div>
 					<div class="columns small-2 medium-2 large-4 category">
-						<a href="<?php echo site_url(); ?>
-/category/tools/">
+						<a href="<?php echo site_url(); ?>/category/tools/">
 							<img src='<?php echo bloginfo('template_directory').'/images/tools.png'; ?>' />
 						</a>
 						<div class="category-name"><span>tools</span></div>
 
 					</div>
 					<div class="columns small-2 medium-2 large-4 category">
-						<a href="<?php echo site_url(); ?>
-/category/entertainment/">
+						<a href="<?php echo site_url(); ?>/category/entertainment/">
 							<img src='<?php echo bloginfo('template_directory').'/images/entertain.png'; ?>' />
 						</a>
 						<div class="category-name"><span>entertainment</span></div>
@@ -83,9 +79,7 @@ get_header(); ?>
 	<?php
 	$cat = get_term_by('name', single_cat_title('',false), 'category');
 
-
 	?>
-
 
 	<div>
 
