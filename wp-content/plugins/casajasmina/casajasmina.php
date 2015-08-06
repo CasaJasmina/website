@@ -42,7 +42,7 @@ function project_post_type() {
 		'labels'              => $labels,
 		'taxonomies' => array('category'),
 		// Features this CPT supports in Post Editor
-		'supports'            => array( 'thumbnail', 'comments', 'revisions', 'title' ),
+		'supports'            => array( 'thumbnail', 'revisions', 'title' ),
 		// You can associate this CPT with a taxonomy or custom taxonomy.
 		/* A hierarchical CPT is like Pages and can have
 		* Parent and child items. A non-hierarchical CPT
