@@ -88,6 +88,17 @@ add_action( 'init', 'project_post_type', 0 );
 
 add_action( 'widgets_init', 'CJ_custom_widget' );
 
+
+function add_things_category_automatically($post_ID) {
+	global $wpdb;
+	if(!has_term('','category',$post_ID)){
+		$cat = array(32);
+		wp_set_object_terms($post_ID, $cat, 'category');
+	}
+}
+add_action('publish_projects', 'add_things_category_automatically');
+
+
 /**
  * Register our widget.
  * 'CJ_Custom_Widget' is the widget class used below.

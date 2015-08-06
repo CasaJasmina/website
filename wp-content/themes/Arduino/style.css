@@ -54,6 +54,7 @@ ul li {
   margin-bottom:50px;
 }
 
+
 /*div.columns {
 padding-left: 0px;
 padding-right: 0px;
@@ -839,16 +840,21 @@ input[type="checkbox"]  {
   margin-bottom:50px;
 }
 
+.page-things .banner{
+  margin-bottom:60px;
+}
+
 .page-things a.things span.author{
   font-size: .9em;
   font-style: italic;
   font-weight: 400;
   font-family: 'Typonine Sans Pro';
   text-transform: lowercase !important;
+  color: #9E856E;
 }
 
 .page-things a.things .categories{
-  bottom:21px;
+  bottom:-9px;
   position: absolute;
   float:right;
 }

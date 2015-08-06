@@ -26,7 +26,7 @@ get_header(); ?>
 			<div class="header-content">
 				<div class="columns small-12 medium-12 large-6  header-claim">
 					<strong>
-						Project built, installed, and under development </br>inside Casa Jasmina
+						<?php single_cat_title(); ?>
 					</strong>
 				</div>
 
@@ -39,14 +39,16 @@ get_header(); ?>
 						</a>
 					</div>
 					<div class="columns small-2 medium-2 large-4 category">
-						<a href="<?php echo site_url(); ?>/category/furniture/">
+						<a href="<?php echo site_url(); ?>
+/category/furniture/">
 							<img src='<?php echo bloginfo('template_directory').'/images/furniture.png'; ?>' />
 						</a>
 						<div class="category-name"><span>furnitures</span></div>
 
 					</div>
 					<div class="columns small-2 medium-2 large-4 category">
-						<a href="<?php echo site_url(); ?>/category/art/">
+						<a href="<?php echo site_url(); ?>
+/category/art/">
 							<img src='<?php echo bloginfo('template_directory').'/images/art.png'; ?>' />
 							<div class="category-name"><span>art pieces</span></div>
 						</a>
@@ -55,14 +57,16 @@ get_header(); ?>
 						.
 					</div>
 					<div class="columns small-2 medium-2 large-4 category">
-						<a href="<?php echo site_url(); ?>/category/tools/">
+						<a href="<?php echo site_url(); ?>
+/category/tools/">
 							<img src='<?php echo bloginfo('template_directory').'/images/tools.png'; ?>' />
 						</a>
 						<div class="category-name"><span>tools</span></div>
 
 					</div>
 					<div class="columns small-2 medium-2 large-4 category">
-						<a href="<?php echo site_url(); ?>/category/entertainment/">
+						<a href="<?php echo site_url(); ?>
+/category/entertainment/">
 							<img src='<?php echo bloginfo('template_directory').'/images/entertain.png'; ?>' />
 						</a>
 						<div class="category-name"><span>entertainment</span></div>
@@ -77,29 +81,35 @@ get_header(); ?>
 
 
 	<?php
+	$cat = get_term_by('name', single_cat_title('',false), 'category');
 
 
-
-	// The Query
-
-	//ask for the last 4 featured posts
-	$args = array( 'post_type' => 'projects', 'posts_per_page' => 16 );
-	$the_query = new WP_Query( $args);
 	?>
-	<?php
-	if ( $the_query->have_posts() ) {
-		echo '<div class="entry-content">';
-		?>
-		<div>
-			<div id="first-post-row" class="row" > <?php
-			while ( $the_query->have_posts()) {
 
-				$the_query->the_post();
+
+	<div>
+
+		<?php
+		$args = array(
+			'posts_per_page' => 100,
+			'post_type' => 'projects',
+			'cat' => $cat->term_id
+		);
+		query_posts($args);
+		if ( have_posts() ) {
+			echo '<div class="entry-content">';
+			?>
+			<div id="first-post-row" class="row" >
+
+				<?php
+				while ( have_posts() ) : the_post();
 
 				//	if ( has_category()){ //get the category
 				$categories = get_the_category();
 
 				?>
+
+
 				<div class="columns small-12 medium-6 large-3 banner">
 
 					<a href="<?php echo get_permalink() ?>"
@@ -140,24 +150,20 @@ get_header(); ?>
 					</a>
 
 				</div>
-				<?php
+			<?php endwhile; ?>
 
-				//	}
-
-			}
-			?>
 		</div>
 		<?php arduino_paging_nav(); ?>
 
 	</div>
 
+	<?php }else {
+		get_template_part( 'content', 'none' );
+	}
+	?>
 	<?php
+	/* Restore original Post Data */
+	wp_reset_postdata();
+	?>
 
-} else {
-	// no posts found
-}
-/* Restore original Post Data */
-wp_reset_postdata();
-?>
-
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
