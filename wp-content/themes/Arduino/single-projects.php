@@ -74,16 +74,19 @@ get_header(); ?>
 	Category
 	</div>
 	<div class="categories">
-		<?php
-			$categories = get_field('category');
-			if($categories){
-				foreach($categories as $category){
-					echo '<span class='. $category->slug. '></span>';
-				}
+
+
+
+
+			<?php foreach ($categories as $cat){
+				echo '<span class='. $cat->slug. '></span>';
 			}
+
 			// always good to see exactly what you are working with
 			//var_dump($categories);
+
 			?>
+
 	</div>
 
 </div>
