@@ -58,14 +58,14 @@ get_header(); ?>
 	Website
 	</div>
 	<span class="website">
-		<a href=' http://<?php the_field('website'); ?> '><?php the_field('website'); ?></a>
+		<a href='<?php the_field('website'); ?> '><?php the_field('website'); ?></a>
 	</span>
 
 	<div class="project_sidebar_heading" >
 	Contribute
 	</div>
 	<span class="github">
-		<a href=' http://<?php the_field('github'); ?> '>
+		<a href='<?php the_field('github'); ?> '>
 		<img src='<?php echo bloginfo('template_directory').'/images/github.jpg'; ?>' />
 	</a>
 	</span>
