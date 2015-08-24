@@ -15,6 +15,7 @@
 
 get_header(); ?>
 
+ questo è il template di index e non dovrebbe venir usato #diofa 
 
 <div id="content" class="page">
 	<div class="row" role="main">
@@ -41,13 +42,13 @@ get_header(); ?>
 
 
 
-						<a href="<?php echo get_permalink() ?>"  
+						<a href="<?php echo get_permalink() ?>"
 							class="<?php foreach ($categories as $cat){ echo($cat->cat_name). " "; } ?>
 							">
 
 							<?php
 							if ( has_post_thumbnail() ) {
-								echo the_post_thumbnail( 'thumbnail-big' ); 
+								echo the_post_thumbnail( 'thumbnail-big' );
 							}
 							?>
 

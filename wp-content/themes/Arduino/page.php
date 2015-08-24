@@ -14,7 +14,7 @@
 get_header(); ?>
 <div id="content" class= "page page-posts">
 
-		
+
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -24,7 +24,7 @@ get_header(); ?>
 			<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
 		</div>
-		
+
 	<div class="row">
 		<?php endwhile; endif; ?>
 		<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
