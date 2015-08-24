@@ -32,36 +32,36 @@ get_header(); ?>
 
 				<div class="columns small-12 medium-12 large-5  header-categories">
 
-					<div class="columns small-2 medium-2 large-4 category">
+					<div class="columns small-4 medium-2 large-4 category">
 						<a href="<?php echo site_url(); ?>/category/c_objects/">
 							<img src='<?php echo bloginfo('template_directory').'/images/cobject.png'; ?>' />
 							<div class="category-name"><span>connected objects</span></div>
 						</a>
 					</div>
-					<div class="columns small-2 medium-2 large-4 category">
+					<div class="columns small-4 medium-2 large-4 category">
 						<a href="<?php echo site_url(); ?>/category/furniture/">
 							<img src='<?php echo bloginfo('template_directory').'/images/furniture.png'; ?>' />
 						</a>
 						<div class="category-name"><span>furnitures</span></div>
 
 					</div>
-					<div class="columns small-2 medium-2 large-4 category">
+					<div class="columns small-4 medium-2 large-4 category">
 						<a href="<?php echo site_url(); ?>/category/art/">
 							<img src='<?php echo bloginfo('template_directory').'/images/art.png'; ?>' />
 							<div class="category-name"><span>art pieces</span></div>
 						</a>
 					</div>
-					<div class="columns small-2 medium-2 large-4 category">
+					<div class="columns small-4 medium-2 large-4 category">
 						.
 					</div>
-					<div class="columns small-2 medium-2 large-4 category">
+					<div class="columns small-4 medium-2 large-4 category">
 						<a href="<?php echo site_url(); ?>/category/tools/">
 							<img src='<?php echo bloginfo('template_directory').'/images/tools.png'; ?>' />
 						</a>
 						<div class="category-name"><span>tools</span></div>
 
 					</div>
-					<div class="columns small-2 medium-2 large-4 category">
+					<div class="columns small-4 medium-2 large-4 category">
 						<a href="<?php echo site_url(); ?>/category/entertainment/">
 							<img src='<?php echo bloginfo('template_directory').'/images/entertain.png'; ?>' />
 						</a>

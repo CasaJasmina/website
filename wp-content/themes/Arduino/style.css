@@ -57,12 +57,10 @@ ul li {
 
 .header-img .wide-image {
   position: absolute;
-      top: -9999px;
-      bottom: -9999px;
+
       left: -9999px;
       right: -9999px;
       margin: auto;
-
       min-height: 300px;
       min-width: 2000px;
 }
@@ -1244,11 +1242,18 @@ input[type="checkbox"]  {
   .header-img .wide-image
 {
     min-height: 300px;
-    min-width: 1000px;
+    min-width: 1579px;
   }
-
   .site-main .row{
     max-width: 650px;
+  }
+
+  .header-categories{
+    margin-top:50px;
+  }
+
+  .header-categories .category{
+    float:left !important;
   }
 }
 
@@ -1262,8 +1267,8 @@ input[type="checkbox"]  {
 
   .header-img .wide-image
 {
-    min-height: 300px;
-    min-width: 1000px;
+  min-height: 300px;
+  min-width: 1579px;
   }
 
   .site-main .page-boxes .row{
@@ -1291,15 +1296,6 @@ input[type="checkbox"]  {
   .site-main .row{
     max-width: 330px;
   }
-
-  .header-img{
-  height:250px;
-  }
-
-  .header-img .wide-image
-{
-    min-height: 250px;
-    min-width: 1000px;  }
 
 
 
