@@ -11,7 +11,7 @@
 ?>
 
 		</div><!-- #main -->
-		<footer id="main">  
+		<footer id="main">
 			<div class="row margin-bottom">
 			    <div class="large-12 small-6 columns">
 
@@ -25,18 +25,18 @@
 
 			      <div class="row">
 
-			        <div class="large-3 columns sponsor-logo">
-			          <a href="http://www.arduino.cc" target="_blank"> 
-			          <img src="<?php echo get_template_directory_uri(); ?>/images/sponsor_logos/arduino.png">
+			        <div class="large-3 columns s-logo">
+			          <a href="http://www.arduino.cc" target="_blank">
+			          <img src="<?php echo get_template_directory_uri(); ?>/images/s_logos/arduino.png">
 
 			          </a>
 			        </div>
 
-			        <div class="large-3 columns sponsor-logo">
-			          <a href="http://www.toolboxoffice.it" target="_blank">  
-			          <img src="<?php echo get_template_directory_uri(); ?>/images/sponsor_logos/toolbox.png">
+			        <div class="large-3 columns s-logo">
+			          <a href="http://www.toolboxoffice.it" target="_blank">
+			          <img src="<?php echo get_template_directory_uri(); ?>/images/s_logos/toolbox.png">
 			          </a>
-			        </div> 
+			        </div>
 			      </div>
 
 
@@ -47,20 +47,20 @@
 			          </p>
 			        </div>
 			       </div>
-			      
+
 			      <div class="row">
 
-					<div class="large-3 columns sponsor-logo margin-top">
-			          <a href="http://www.valcucine.com" target="_blank"> 
-			          <img src="<?php echo get_template_directory_uri(); ?>/images/sponsor_logos/valcucine.png">
+					<div class="large-3 columns s-logo margin-top">
+			          <a href="http://www.valcucine.com" target="_blank">
+			          <img src="<?php echo get_template_directory_uri(); ?>/images/s_logos/valcucine.png">
 			           </a>
-			        </div> 
+			        </div>
 
-			        <div class="large-3 columns sponsor-logo margin-top">
-			          <a href="http://www.energy-home.it" target="_blank"> 
-			          <img src="<?php echo get_template_directory_uri(); ?>/images/sponsor_logos/energyAtHome.png">
+			        <div class="large-3 columns s-logo margin-top">
+			          <a href="http://www.energy-home.it" target="_blank">
+			          <img src="<?php echo get_template_directory_uri(); ?>/images/s_logos/energyAtHome.png">
 			           </a>
-			        </div> 
+			        </div>
 
 					</div>
 
