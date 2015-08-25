@@ -7,7 +7,7 @@ class UTHSC_WPCAS_Options {
 
 		$settings = array(
 				'uthsc-wpcas-configuration' => array (
-					'uthsc_wpcas_host'				=> 'auth.uthsc.edu',
+					'uthsc_wpcas_host'				=> 'id.arduino.cc',
 					'uthsc_wpcas_user_email'	=> 'email',
 					'uthsc_wpcas_first_name'	=> 'firstname',
 					'uthsc_wpcas_last_name'		=> 'lastname',
