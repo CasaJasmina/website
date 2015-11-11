@@ -61,14 +61,20 @@ get_header(); ?>
 		<a href='<?php the_field('website'); ?> '><?php the_field('website'); ?></a>
 	</span>
 
+
+
+	<?php if( get_field('github_repo') ): ?>
 	<div class="project_sidebar_heading" >
 	Contribute
 	</div>
 	<span class="github">
-		<a href='<?php the_field('github'); ?> '>
+		<a href='<?php the_field('github_repo'); ?> '>
 		<img src='<?php echo bloginfo('template_directory').'/images/github.jpg'; ?>' />
 	</a>
 	</span>
+<?php endif; ?>
+
+
 
 	<div class="project_sidebar_heading" >
 	Category
