@@ -1072,6 +1072,7 @@ input[type="checkbox"]  {
   ul.menu li.menu-item-has-children > a span:hover {
     border-bottom: none;
   }
+    
 
   ul.sub-menu a {
     padding: 10px 20px;
