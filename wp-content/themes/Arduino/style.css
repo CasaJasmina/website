@@ -50,7 +50,7 @@ ul li {
 .header-img{
   margin-top: 20px;
   padding:0px;
-  margin-bottom:100px;
+  margin-bottom: 12%;
   height:300px
 
 }
@@ -1072,7 +1072,7 @@ input[type="checkbox"]  {
   ul.menu li.menu-item-has-children > a span:hover {
     border-bottom: none;
   }
-    
+
 
   ul.sub-menu a {
     padding: 10px 20px;
