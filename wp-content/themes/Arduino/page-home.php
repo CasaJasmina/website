@@ -20,8 +20,8 @@ get_header(); ?>
 
 
 	<div class="columns small-12 medium-12 large-12 header-img">
-		<img class="wide-image" src='<?php echo bloginfo('template_directory').'/images/header1.jpg'; ?>' />
-
+	<!--	<img class="wide-image" src='<?php echo bloginfo('template_directory').'/images/header1.jpg'; ?>' /> -->
+	<div class="wideone"></div>
 		<div class="row">
 			<div class="header-content">
 				<div class="header-claim">

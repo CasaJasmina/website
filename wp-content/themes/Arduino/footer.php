@@ -15,60 +15,50 @@
 			<div class="row margin-bottom">
 			    <div class="large-12 small-6 columns">
 
-			      <div class="row">
-			        <div class="small-12 large-6 columns ">
-			          <p class="headlines">
-			            Powered by
-			          </p>
-			        </div>
-			      </div>
-
-			      <div class="row">
-
-			        <div class="large-3 columns s-logo">
-			          <a href="http://www.arduino.cc" target="_blank">
-			          <img src="<?php echo get_template_directory_uri(); ?>/images/s_logos/arduino.png">
-
-			          </a>
-			        </div>
-
-			        <div class="large-3 columns s-logo">
-			          <a href="http://www.toolboxoffice.it" target="_blank">
-			          <img src="<?php echo get_template_directory_uri(); ?>/images/s_logos/toolbox.png">
-			          </a>
-			        </div>
-			      </div>
-
-
  					<div class="row">
-			        <div class="small-12 large-6 columns ">
-			          <p class="headlines">
+
+
+								<div class="large-4 columns">
+			          <p class="headlines sinistra">
 			            Supported by
 			          </p>
-			        </div>
-			       </div>
 
-			      <div class="row">
 
-					<div class="large-3 columns s-logo margin-top">
-			          <a href="http://www.valcucine.com" target="_blank">
-			          <img src="<?php echo get_template_directory_uri(); ?>/images/s_logos/valcucine.png">
-			           </a>
-			        </div>
+							<div class="s-logo">
+								<a href="http://www.arduino.cc" target="_blank">
+								<img class="logoleft" src="<?php echo get_template_directory_uri(); ?>/images/s_logos/arduino_genuino.png">
+								</a>
+							</div>
 
-			        <div class="large-3 columns s-logo margin-top">
+							<div class="s-logo">
+								<a href="http://www.toolboxoffice.it" target="_blank">
+								<img class="logoleft" src="<?php echo get_template_directory_uri(); ?>/images/s_logos/toolbox.png">
+								</a>
+							</div></div>
+
+
+
+									<div class="large-4 columns">
+										<p class="headlines destra">
+					            Powered by
+					          </p>
+
+									<div class="s-logo ">
+			          	<a href="http://www.valcucine.com" target="_blank">
+			          	<img class="logoright" src="<?php echo get_template_directory_uri(); ?>/images/s_logos/valcucine.png">
+			            </a>
+			        	 </div>
+
+			        <div class="s-logo  ">
 			          <a href="http://www.energy-home.it" target="_blank">
-			          <img src="<?php echo get_template_directory_uri(); ?>/images/s_logos/energyAtHome.png">
+			          <img class="logoright" src="<?php echo get_template_directory_uri(); ?>/images/s_logos/energyAtHome.png">
 			           </a>
-			        </div>
+			        </div></div>
 
+</div></div>
 					</div>
 
-			      </div>
 
-
-			    </div>
-		  </div>
 		  <div class="arduino-footer">
 
 		  	<div class="row">

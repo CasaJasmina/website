@@ -10,7 +10,7 @@ Author: Stefania - Lorenzo
 body{
   font-family: "Typonine Sans Pro";
   color: #4E5B61;
-  font-size: 19px;
+  font-size: 1em;
   line-height: 1.625;
 
 
@@ -49,21 +49,24 @@ ul li {
   /*padding: 20px 0 25px;*/
 }
 
+.wideone{
+  background-image: url('images/header11.png');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+
+}
+
 .header-img{
   margin-top: 20px;
   padding:0px;
-  margin-bottom:100px;
-  height:300px
+  margin-bottom:1%;
+  margin-bottom: 3%;
+
 }
 
-.header-img .wide-image {
-  position: absolute;
-      left: -9999px;
-      right: -9999px;
-      margin: auto;
-      min-height: 300px;
-      min-width: 1700px;
-}
 
 /*div.columns {
 padding-left: 0px;
@@ -75,11 +78,12 @@ padding-right: 0px;
 }
 
 .site-logo a:nth-child(2) img {
-  height: 40px;
+  height: 35px;
 }
 
 .header {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .menu-header {
@@ -326,13 +330,6 @@ position: relative;
   border-bottom: 2px solid transparent;
 }
 
-.iframe:before{
-  content:" error ";
-}
-
-.iframe:after{
-  content:"</div>";
-}
 
 .video-wrapper + p {
   position: absolute;
@@ -583,11 +580,15 @@ footer#main {
   background-color: #00979d;
   color: white;
   padding-top: 2em;
+  margin-top: 2%;
+  margin-bottom: 0px;
+
 }
 
 .arduino-footer .row {
   margin-bottom: 0px;
 }
+
 
 .monospace {
   font-family: 'Typonine Sans Mono';
@@ -653,11 +654,28 @@ footer .inline-list {
   font-family: 'Typonine Sans Pro';
   font-weight: 600;
   font-style: normal;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+  padding-top: 10%;
 }
-
-.s-logo img {
-  max-height: 90px;
+.destra{
+text-align: right;
+}
+.logoright{
+  float:right;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.sinistra{
+text-align: left;
+}
+.logoleft{
+  float:left;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+.s-logo img{
+max-width: 35%;
+max-height: 80px;
 }
 
 
@@ -984,12 +1002,11 @@ input[type="checkbox"]  {
   .header-img{
   height:340px;
 }
-
-  .header-img .wide-image
-{
-    min-height: 300px;
-    min-width: 1700px;
+  .header-img .wide-image{
+    min-width: 100%;
+    background-size: cover;
   }
+
 
   ul.menu {
     border-bottom: 1px solid rgba(158,132,109,0.27);
@@ -1130,14 +1147,14 @@ input[type="checkbox"]  {
 @media (max-width: 1149px) {
   .header-img{
   height:300px;
+  padding-bottom: 335px;
 
   }
 
   .header-img .wide-image
 {
-    min-height: 300px;
-    min-width: 1700px;
-
+    height:auto;
+    min-width: 100%;
   }
 
 
@@ -1278,9 +1295,11 @@ input[type="checkbox"]  {
   }
   .header-img .wide-image
 {
-    min-height: 300px;
-    min-width: 1579px;
+    min-width: 100%;
   }
+
+
+
   .site-main .row{
     max-width: 650px;
   }
@@ -1303,9 +1322,8 @@ input[type="checkbox"]  {
   }
 
   .header-img .wide-image
-{
-  min-height: 300px;
-  min-width: 1579px;
+{ height: auto;
+  min-width: 100%;
   }
 
   .site-main .page-boxes .row{
@@ -1324,7 +1342,13 @@ input[type="checkbox"]  {
     font-family: 'Typonine Sans Mono';
     line-height: 42px;
     font-weight: 600;
-    font-size: 20px !important;
+    font-size: 200px !important;
+  }
+
+  .header-categories{
+    margin-top:10px;
+    max-width: 300px;
+
   }
 
 }
@@ -1333,7 +1357,23 @@ input[type="checkbox"]  {
 @media (max-width: 400px) {
   .site-main .row{
     max-width: 330px;
-  }
+    }
+
+    .header-categories{
+      margin-top:10px;
+      max-width: 300px;
+
+    }
+
+    .page a span > span{
+      background-color: white;
+      padding: 0px 4px;
+      text-transform: uppercase;
+      font-family: 'Typonine Sans Mono';
+      line-height: 42px;
+      font-weight: 600;
+      font-size: 20px !important;
+    }
 
 
 
