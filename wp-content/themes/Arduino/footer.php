@@ -20,7 +20,7 @@
 
 								<div class="large-4 columns">
 			          <p class="headlines sinistra">
-			            Supported by
+			            Powered by
 			          </p>
 
 
@@ -40,7 +40,7 @@
 
 									<div class="large-4 columns">
 										<p class="headlines destra">
-					            Powered by
+					            Supported by
 					          </p>
 
 									<div class="s-logo ">
