@@ -18,7 +18,7 @@ get_header(); ?>
 
 	<!-- this is the mega image that stays on top -->
 
-
+<div class="row full-width">
 	<div class="columns small-12 medium-12 large-12 header-img">
 	<!--	<img class="wide-image" src='<?php echo bloginfo('template_directory').'/images/header1.jpg'; ?>' /> -->
 	<div class="wideone"></div>
@@ -32,6 +32,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+</div>
 
 
 

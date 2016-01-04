@@ -64,15 +64,13 @@ ul li {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 300px;
-
+margin-bottom: 115px;
 }
 
 .header-img{
   margin-top: 20px;
   padding:0px;
-  margin-bottom:1%;
-  margin-bottom: 3%;
-
+  margin-bottom:4%;
 }
 
 
@@ -477,7 +475,7 @@ a.event span.date {
 /*this is about the page where contents are listed like the blog*/
 
 .attachment-thumbnail-big {
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 
 .page-posts .credits{
@@ -485,7 +483,7 @@ a.event span.date {
 }
 
 .page-posts img{
-  margin-top: 0px;
+  margin-top: 3%;
 }
 
 
@@ -528,7 +526,7 @@ a.event span.date {
 
 .page a span.title {
   position: absolute;
-  top: 45px;
+  top: 3%;
   min-width: 250px;
 
 }
@@ -663,7 +661,7 @@ footer .inline-list {
   font-weight: 600;
   font-style: normal;
   margin-bottom: 1em;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .destra{
 text-align: right;
@@ -718,19 +716,21 @@ max-height: 80px;
 
 
 .header-claim{
+  min-width: 500px;
   max-width: 500px;
   text-align: left;
+  position: absolute;
+
 }
 
 .header-content{
   position: absolute;
-  top: 50px;
+  top: 5%;
   max-width: 1260px;
 }
 
 .header-claim .subtitle{
   color: #f1c40f;
-  .columns
 }
 .header-claim strong{
   background-color: white;
@@ -911,7 +911,7 @@ input[type="checkbox"]  {
 }
 
 .page-things .banner{
-  margin-bottom:60px;
+  margin-bottom: 4%;
 }
 
 .page-things a.things span.author{
@@ -1301,26 +1301,28 @@ input[type="checkbox"]  {
   .header-img{
   height:300px;
   }
-  .header-img .wide-image
-{
+  .header-img .wide-image{
     min-width: 100%;
   }
 
 
+.large-4.medium-6.small-12.columns{
+  min-width: 100%;
+}
 
   .site-main .row{
     max-width: 650px;
   }
 
   .header-categories{
-    margin-top:40px;
+    margin-top:20%;
   }
 
   .header-categories .category{
     float:left !important;
   }
   .columns.small-12.medium-6.large-3.banner{
-  padding-bottom: 5%;
+  margin-bottom: 5%;
   }
 }
 
@@ -1332,8 +1334,8 @@ input[type="checkbox"]  {
   height:300px;
   }
 
-  .header-img .wide-image
-{ height: auto;
+  .header-img .wide-image{
+  height: auto;
   min-width: 100%;
   }
 
@@ -1341,10 +1343,6 @@ input[type="checkbox"]  {
     max-width: 330px;
   }
 
-
-  .site-main .row{
-
-  }
 
   .page a span > span{
     background-color: white;
@@ -1358,28 +1356,55 @@ input[type="checkbox"]  {
 
 
   .header-categories{
-    margin-top: 5%;
-    max-width: 250px;
+    margin-top: 40%;
+    max-width: 300px;
   }
 
   .columns.small-12.medium-6.large-3.banner{
-  padding-bottom: 5%;
+  margin-top: 5%;
   }
+  .logoright{
+    min-width: 70%;
+    padding-top: 15%;
+  }
+  .logoleft{
+    min-width: 80%;
+    padding-top: 5%;
+  }
+
 
 }
 
-/* small */
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 1.3),
+	only screen and (min-device-pixel-ratio: 1.3),
+	only screen and (min-resolution: 120dpi)
+	{
+    .site-main .row{
+      width: 100% !important;
+      }
+	}
+
+  /* small */
+
 @media (max-width: 400px) {
   .site-main .row{
-    max-width: 330px;
+    width: 100%;
     }
     .columns.small-12.medium-6.large-3{
-      padding-bottom: 5%;
+      margin-top: 5%;
     }
-
+    .header-claim{
+      text-align: left;
+      position: absolute;
+    }
+    .header-claim strong{
+      font-size: 20px;
+      }
     .header-categories{
-      margin-top:10px;
-      max-width: 230px;
+      margin-top:60%;
+      max-width: 250px;
 
     }
 
@@ -1392,7 +1417,17 @@ input[type="checkbox"]  {
       font-weight: 600;
       font-size: 20px !important;
     }
+    .logoright{
+      min-width: 70%;
+      padding-top: 15%;
+    }
+    .logoleft{
+      min-width: 80%;
+      padding-top: 5%;
+    }
 
-
+    .size-large.wp-image-344{
+      max-width: 30%;
+    }
 
 }

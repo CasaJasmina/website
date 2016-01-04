@@ -13,12 +13,12 @@
 		</div><!-- #main -->
 		<footer id="main">
 			<div class="row margin-bottom">
-			    <div class="large-12 small-6 columns">
+
 
  					<div class="row">
 
 
-								<div class="large-4 columns">
+								<div class="large-6 medium-6 small-6 columns">
 			          <p class="headlines sinistra">
 			            Powered by
 			          </p>
@@ -38,7 +38,7 @@
 
 
 
-									<div class="large-4 columns">
+									<div class="large-6 medium-6 small-6 columns">
 										<p class="headlines destra">
 					            Supported by
 					          </p>
@@ -56,7 +56,7 @@
 			        </div></div>
 
 </div></div>
-					</div>
+				
 
 
 		  <div class="arduino-footer">
