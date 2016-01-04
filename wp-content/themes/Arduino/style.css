@@ -716,11 +716,11 @@ max-height: 80px;
 
 
 .header-claim{
-  min-width: 500px;
-  max-width: 500px;
+  min-width: 600px;
+  max-width: 100%;
   text-align: left;
   position: absolute;
-
+  margin-left: 15px;
 }
 
 .header-content{
@@ -1398,10 +1398,12 @@ input[type="checkbox"]  {
     .header-claim{
       text-align: left;
       position: absolute;
+      min-width: 300px;
     }
     .header-claim strong{
       font-size: 20px;
       }
+
     .header-categories{
       margin-top:60%;
       max-width: 250px;
