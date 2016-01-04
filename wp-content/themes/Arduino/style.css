@@ -10,7 +10,7 @@ Author: Stefania - Lorenzo
 body{
   font-family: "Typonine Sans Pro";
   color: #4E5B61;
-  font-size: 19px;
+  font-size: 1em;
   line-height: 1.625;
 
 
@@ -49,21 +49,35 @@ ul li {
   /*padding: 20px 0 25px;*/
 }
 
+.wideone{
+  background-image: url('images/header11.png');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+
+}
+.wide-things{
+  background-image: url('images/things-header.jpg');
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+margin-bottom: 115px;
+}
+
 .header-img{
   margin-top: 20px;
   padding:0px;
+<<<<<<< HEAD
+  margin-bottom:4%;
+=======
   margin-bottom: 12%;
   height:300px
+>>>>>>> master
 }
 
-.header-img .wide-image {
-  position: absolute;
-      left: -9999px;
-      right: -9999px;
-      margin: auto;
-      min-height: 300px;
-      min-width: 1700px;
-}
 
 /*div.columns {
 padding-left: 0px;
@@ -75,11 +89,12 @@ padding-right: 0px;
 }
 
 .site-logo a:nth-child(2) img {
-  height: 40px;
+  height: 35px;
 }
 
 .header {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .menu-header {
@@ -326,13 +341,6 @@ position: relative;
   border-bottom: 2px solid transparent;
 }
 
-.iframe:before{
-  content:" error ";
-}
-
-.iframe:after{
-  content:"</div>";
-}
 
 .video-wrapper + p {
   position: absolute;
@@ -472,7 +480,7 @@ a.event span.date {
 /*this is about the page where contents are listed like the blog*/
 
 .attachment-thumbnail-big {
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 
 .page-posts .credits{
@@ -480,7 +488,7 @@ a.event span.date {
 }
 
 .page-posts img{
-  margin-top: 0px;
+  margin-top: 3%;
 }
 
 
@@ -523,7 +531,7 @@ a.event span.date {
 
 .page a span.title {
   position: absolute;
-  top: 45px;
+  top: 3%;
   min-width: 250px;
 
 }
@@ -583,11 +591,15 @@ footer#main {
   background-color: #00979d;
   color: white;
   padding-top: 2em;
+  margin-top: 2%;
+  margin-bottom: 0px;
+
 }
 
 .arduino-footer .row {
   margin-bottom: 0px;
 }
+
 
 .monospace {
   font-family: 'Typonine Sans Mono';
@@ -653,11 +665,28 @@ footer .inline-list {
   font-family: 'Typonine Sans Pro';
   font-weight: 600;
   font-style: normal;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+  padding-top: 5%;
 }
-
-.s-logo img {
-  max-height: 90px;
+.destra{
+text-align: right;
+}
+.logoright{
+  float:right;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.sinistra{
+text-align: left;
+}
+.logoleft{
+  float:left;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+.s-logo img{
+max-width: 35%;
+max-height: 80px;
 }
 
 
@@ -692,19 +721,21 @@ footer .inline-list {
 
 
 .header-claim{
-  max-width: 500px;
+  min-width: 600px;
+  max-width: 100%;
   text-align: left;
+  position: absolute;
+  margin-left: 15px;
 }
 
 .header-content{
   position: absolute;
-  top: 50px;
+  top: 5%;
   max-width: 1260px;
 }
 
 .header-claim .subtitle{
   color: #f1c40f;
-  .columns
 }
 .header-claim strong{
   background-color: white;
@@ -718,7 +749,7 @@ footer .inline-list {
 }
 
 .header-categories .category{
-  margin-bottom:20px;
+  margin-bottom :20px;
 }
 
 
@@ -885,7 +916,7 @@ input[type="checkbox"]  {
 }
 
 .page-things .banner{
-  margin-bottom:60px;
+  margin-bottom: 4%;
 }
 
 .page-things a.things span.author{
@@ -984,12 +1015,11 @@ input[type="checkbox"]  {
   .header-img{
   height:340px;
 }
-
-  .header-img .wide-image
-{
-    min-height: 300px;
-    min-width: 1700px;
+  .header-img .wide-image{
+    min-width: 100%;
+    background-size: cover;
   }
+
 
   ul.menu {
     border-bottom: 1px solid rgba(158,132,109,0.27);
@@ -1130,14 +1160,14 @@ input[type="checkbox"]  {
 @media (max-width: 1149px) {
   .header-img{
   height:300px;
+  padding-bottom: 335px;
 
   }
 
   .header-img .wide-image
 {
-    min-height: 300px;
-    min-width: 1700px;
-
+    height:auto;
+    min-width: 100%;
   }
 
 
@@ -1276,21 +1306,28 @@ input[type="checkbox"]  {
   .header-img{
   height:300px;
   }
-  .header-img .wide-image
-{
-    min-height: 300px;
-    min-width: 1579px;
+  .header-img .wide-image{
+    min-width: 100%;
   }
+
+
+.large-4.medium-6.small-12.columns{
+  min-width: 100%;
+}
+
   .site-main .row{
     max-width: 650px;
   }
 
   .header-categories{
-    margin-top:50px;
+    margin-top:20%;
   }
 
   .header-categories .category{
     float:left !important;
+  }
+  .columns.small-12.medium-6.large-3.banner{
+  margin-bottom: 5%;
   }
 }
 
@@ -1302,20 +1339,15 @@ input[type="checkbox"]  {
   height:300px;
   }
 
-  .header-img .wide-image
-{
-  min-height: 300px;
-  min-width: 1579px;
+  .header-img .wide-image{
+  height: auto;
+  min-width: 100%;
   }
 
   .site-main .page-boxes .row{
     max-width: 330px;
   }
 
-
-  .site-main .row{
-
-  }
 
   .page a span > span{
     background-color: white;
@@ -1327,14 +1359,82 @@ input[type="checkbox"]  {
     font-size: 20px !important;
   }
 
-}
 
-/* small */
-@media (max-width: 400px) {
-  .site-main .row{
-    max-width: 330px;
+  .header-categories{
+    margin-top: 40%;
+    max-width: 300px;
+  }
+
+  .columns.small-12.medium-6.large-3.banner{
+  margin-top: 5%;
+  }
+  .logoright{
+    min-width: 70%;
+    padding-top: 15%;
+  }
+  .logoleft{
+    min-width: 80%;
+    padding-top: 5%;
   }
 
 
+}
+
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 1.3),
+	only screen and (min-device-pixel-ratio: 1.3),
+	only screen and (min-resolution: 120dpi)
+	{
+    .site-main .row{
+      width: 100% !important;
+      }
+	}
+
+  /* small */
+
+@media (max-width: 400px) {
+  .site-main .row{
+    width: 100%;
+    }
+    .columns.small-12.medium-6.large-3{
+      margin-top: 5%;
+    }
+    .header-claim{
+      text-align: left;
+      position: absolute;
+      min-width: 300px;
+    }
+    .header-claim strong{
+      font-size: 20px;
+      }
+
+    .header-categories{
+      margin-top:60%;
+      max-width: 250px;
+
+    }
+
+    .page a span > span{
+      background-color: white;
+      padding: 0px 4px;
+      text-transform: uppercase;
+      font-family: 'Typonine Sans Mono';
+      line-height: 42px;
+      font-weight: 600;
+      font-size: 20px !important;
+    }
+    .logoright{
+      min-width: 70%;
+      padding-top: 15%;
+    }
+    .logoleft{
+      min-width: 80%;
+      padding-top: 5%;
+    }
+
+    .size-large.wp-image-344{
+      max-width: 30%;
+    }
 
 }

@@ -31,6 +31,15 @@ add_image_size( 'thumbnail-big', 945, 500, true );
 set_post_thumbnail_size( 200, 200, true );
 
 
+/* Resizing embed videos
+
+
+add_filter( 'embed_defaults', 'wps_embed_defaults' );
+function wps_embed_defaults( $defaults ) {
+		return array( 'width'  => 810, 'height' => 610 );
+}*/
+
+
 
 
 /*  Thumbnail upscale
