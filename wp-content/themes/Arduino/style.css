@@ -931,6 +931,9 @@ input[type="checkbox"]  {
   position: absolute;
   float:right;
 }
+.page-single-thing{
+  margin-top: 3%;
+}
 
 .page-things a.things .categories span,  .page-single-thing .categories span{
   height:25px;
