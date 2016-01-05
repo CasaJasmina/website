@@ -8,18 +8,10 @@
  */
 
 get_header(); ?>
-
+<div class="row">
 <div id="content" class= "page page-single-thing">
 
-	<div class="row">
-
-	<?php /*
-	<div class="large-4 columns">
-		<?php get_sidebar(); ?>
-	</div>
-*/?>
-<div class="row">
-<div class="columns small-12 medium-12 large-9">
+<div class="columns small-12 medium-12 large-9 ">
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<?php
@@ -132,6 +124,6 @@ get_header(); ?>
 
 	</div>
 
-</div>
+
 </div>
 <?php get_footer(); ?>
