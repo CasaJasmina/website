@@ -12,7 +12,7 @@
 
 		</div><!-- #main -->
 		<footer id="main">
-			<div class="row margin-bottom">
+
 
 
  					<div class="row">
@@ -32,7 +32,7 @@
 
 							<div class="s-logo">
 								<a href="http://www.toolboxoffice.it" target="_blank">
-								<img class="logoleft" src="<?php echo get_template_directory_uri(); ?>/images/s_logos/toolbox.png">
+								<img class="logoleft toolbox" src="<?php echo get_template_directory_uri(); ?>/images/s_logos/toolbox.png">
 								</a>
 							</div></div>
 
@@ -56,7 +56,7 @@
 			        </div></div>
 
 </div></div>
-				
+
 
 
 		  <div class="arduino-footer">
@@ -106,7 +106,7 @@
 	  					</li>
 	  				</ul>
 	  			</div>
-	  		</div>
+
 
 		  </div>
 		</footer>
