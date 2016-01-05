@@ -24,13 +24,13 @@ get_header(); ?>
 
 		<div class="row ">
 			<div class="header-content">
-				<div class="columns small-12 medium-12 large-6  header-claim">
+				<div class="columns small-12 medium-12 large-6 header-claim">
 					<strong>
 						<?php single_cat_title(); ?>
 					</strong>
 				</div>
 
-				<div class="columns small-12 medium-12 large-5  header-categories">
+				<div class="columns small-12 medium-12 large-5 header-categories">
 
 					<div class="columns small-4 medium-2 large-4 category">
 						<a href="<?php echo site_url(); ?>/category/c_objects/">
