@@ -73,18 +73,16 @@
 
     <?php endwhile; ?>
 
-
-
-
     <div class="columns small-12 medium-12 large-9 post-list ">
       <?php /*
       <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
       <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
       */?>
-
-      <?php arduino_paging_nav(); ?>
 </div>
 
+<div class="columns small-12 medium-12 large-9 left paging-navigation">
+<?php arduino_paging_nav(); ?>
+</div>
 
 <?php
 

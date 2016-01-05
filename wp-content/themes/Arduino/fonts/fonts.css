@@ -1,11 +1,11 @@
 /*
-*   This is a reference CSS file containing all the web fonts used within the Arduino website + web applications. 
+*   This is a reference CSS file containing all the web fonts used within the Arduino website + web applications.
 *
 *   This specific file loads the web proof fonts (.eot .woff .svg) from an external source.
 */
 
 
-/******************************** 
+/********************************
 ******* TYPONINE SANS PRO *******
 ********************************/
 
@@ -19,7 +19,7 @@
 }
 /* TYPONINE SANS PRO - LIGHT ITALIC */
 @font-face {
-    font-family: 'Typonine Sans Pro';
+    font-family: 'Typonine Sans Light Italic';
     src: url("typoninesanspro-lightita-webfont.eot");
     src: url("typoninesanspro-lightita-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanspro-lightita-webfont.woff") format("woff"), url("typoninesanspro-lightita-webfont.svg") format("svg");
     font-weight: 100;
@@ -91,7 +91,7 @@
 }
 
 
-/******************************** 
+/********************************
 ********* TYPONINE MONO *********
 ********************************/
 
@@ -177,7 +177,7 @@
 }
 
 
-/******************************** 
+/********************************
 ** TYPONINE SANS CONDENSED PRO **
 ********************************/
 
