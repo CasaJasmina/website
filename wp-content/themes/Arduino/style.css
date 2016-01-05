@@ -108,6 +108,10 @@ padding-right: 0px;
 ul {
   list-style: none;
 }
+.userAvatar{
+  width: 44px;
+  
+}
 
 .userAvatar img {
   -webkit-border-radius: 50%;
