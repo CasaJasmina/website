@@ -8,3 +8,4 @@ wp-config.php
 wp-content/uploads/*
 wp-content/plugins/uthsc-wpcas/caskey/*
 .htaccess
+.DS_Store
