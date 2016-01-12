@@ -73,6 +73,10 @@ margin-bottom: 115px;
   background-repeat: no-repeat;
 }
 
+img.alignleft {
+    float: left;
+    margin-right: 15px;
+  }
 
 /*div.columns {
 padding-left: 0px;
