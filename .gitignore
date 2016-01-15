@@ -7,4 +7,5 @@ wp-content/themes/Arduino/Arduino_BAR.php
 wp-config.php
 wp-content/uploads/*
 wp-content/plugins/uthsc-wpcas/caskey/*
+wp-content/logs/php-errors.log
 .htaccess
