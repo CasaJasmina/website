@@ -19,7 +19,7 @@ $session = new FacebookSession($appID.'|'.$appSecret);
 // To validate the session:
 try {
   $session->validate();
-  echo '<div class="updated" style="color:#222222; font-weight:700; font-size:1em; padding:10px">Settings Saved</div>';	
+  echo '<div class="updated" style="color:#222222; font-weight:700; font-size:1em; padding:10px">Settings Saved</div>';
 
 } catch (FacebookRequestException $ex) {
   // Session not valid, Graph API returned an exception with the reason.
@@ -58,7 +58,7 @@ try {
 	$eventResponse = (new FacebookRequest($session, 'GET', '/'.$facebook_page.'/events?fields=place,cover,attending_count,description,end_time,id,name,owner,start_time,ticket_uri,timezone&limit=99'))->execute()->getResponse();
 	$events = $eventResponse->data;
 
-	foreach ($events as $e) {	
+	foreach ($events as $e) {
         $session = FacebookSession::newAppSession();
 		$venue = (new FacebookRequest($session, 'GET', '/'.$facebook_page.'?fields=phone,photos,username,about,category,cover,emails,general_info,general_manager,location,website&limit=99'))->execute()->getResponse();
 
@@ -66,12 +66,12 @@ try {
 		$endDate = $e->end_time;
 		$timezone = $e->timezone;
 
-		
+
 		$category = $e->owner->category;
 
 
 	    $event_id = $e->id;
-	    $eId = wp_strip_all_tags($e->id);	
+	    $eId = wp_strip_all_tags($e->id);
 		$city = $e->place->location->city;
 		$state = $e->place->location->state;
 		$zip = $e->place->location->zip;
@@ -89,13 +89,13 @@ try {
 		$venue_phone = $venue->phone;
 		$venue_desc = $venue->about;
 		$emails = $venue->emails;
-		$username = $venue->username; 
+		$username = $venue->username;
 		$emailAddress = $emails[0];
-		$venue_website = $venue->website;	
-		$event_tag = $venue->category;	
+		$venue_website = $venue->website;
+		$event_tag = $venue->category;
 
-  
-   
+
+
     if($state){
     	$state = $state.'&nbsp;';
     }
@@ -134,12 +134,13 @@ try {
     ),
 );
 	$loop = new WP_Query( $args );
-   if( $loop->have_posts() ){ 
-      $u++;	
+   if( $loop->have_posts() ){
+      $u++;
    	  while ( $loop->have_posts() ) : $loop->the_post();
-		
+
 	  $post_id = get_the_ID();
 	  $curEventImage = get_post_meta( $post_id, 'image_url', true );
+    print_r ($curEventImage);
 	  $post_information = array(
 	  	    'post_type' => 'facebook_events',
 	        'ID' => $post_id,
@@ -147,28 +148,28 @@ try {
 			'post_content' => wp_strip_all_tags($e->description),
 			'tags_input' => $event_tag,
 					 );
-             
+
              if($eventImage != $curEventImage ){insert_image($eventImage,$post_id); }
-			 
+
 	  		 wp_update_post( $post_information );
 	   endwhile;
-	 }else{ 
+	 }else{
 	 $post_information = array(
 			'post_type' => 'facebook_events',
 			'post_title' => wp_strip_all_tags($e->name),
 			'post_content' => wp_strip_all_tags($e->description),
 			'post_status' => 'publish',
 			'tags_input' => $event_tag,
-					 );		
-	        
-	         $post_id = wp_insert_post( $post_information ); 
-	         insert_image($eventImage,$post_id); 
-	        
+					 );
+
+	         $post_id = wp_insert_post( $post_information );
+	         insert_image($eventImage,$post_id);
+
 	     }
 
         $i++;
-		 
-  
+
+
 
 		update_post_meta($post_id,'event_timezone',$timezone);
 		update_post_meta($post_id,'start_time',$startDate);
@@ -181,16 +182,16 @@ try {
 		update_post_meta($post_id,'ticket_uri',$ticket_uri);
 		update_post_meta($post_id,'fb_event_uri',$fb_event_uri);
 		update_post_meta($post_id,'geo_latitude',$lat);
-		update_post_meta($post_id,'geo_longitude',$long);			
-		update_post_meta($post_id,'venue_email',$emailAddress);	
-		update_post_meta($post_id,'venue_phone',$phone);	
+		update_post_meta($post_id,'geo_longitude',$long);
+		update_post_meta($post_id,'venue_email',$emailAddress);
+		update_post_meta($post_id,'venue_phone',$phone);
 		update_post_meta($post_id,'venue_website',$website);
 		update_post_meta($post_id,'facebook','https://facebook.com/'.$username);
 	 	update_post_meta($post_id,'venue_desc',$venue_desc);
 	    update_post_meta($post_id,'venue_name',$venue_name);
 
-	
-	 }  
+
+	 }
 
 
 
@@ -218,7 +219,7 @@ try {
 
 	if($error == 100 ){
 		echo '<div class="error" style="color:#222222; font-weight:700; font-size:1em; padding:10px">Error '.$error.': <a href="https://www.facebook.com/'.$facebook_page.'/events" target="_blank">'.$facebook_page.'</a>. <i> Country or age restricted material. Check your app settings.</i> </div>';
-	}else if ($error == 102){	
+	}else if ($error == 102){
 		echo '<div class="error" style="color:#222222; font-weight:700; font-size:1em; padding:10px">Error '.$error.': Session key invalid or no longer valid.</div>';
 	}else{
 		echo '<div class="error" style="color:#222222; font-weight:700; font-size:1em; padding:10px">Error '.$error.'&nbsp;'.$errorMsg .'&nbsp;: Troubleshooting tip <a href="https://developers.facebook.com/docs/marketing-api/error-reference" target="_blank">View API Error Codes</a></div>';
@@ -268,5 +269,5 @@ try {
 			    }
 			}
 		update_post_meta($post_id,'image_url',$eventImage);
-		
+
 }?>

@@ -4,7 +4,7 @@ add_image_size( 'fb_event_list', '288', '192', true );
 add_image_size( 'fb_event_ad', '288', '295', true );
 
 add_action( 'init', 'create_fbe_post_event' );
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
 
 function create_fbe_post_event() {
   $slug = get_option("slug");
@@ -18,10 +18,10 @@ function create_fbe_post_event() {
         'singular_name' => __( 'Facebook Event' )
       ),
       'public' => true,
-      'menu_position' => 5, 
-      'menu_icon' =>  'dashicons-calendar', 
+      'menu_position' => 5,
+      'menu_icon' =>  'dashicons-calendar',
   	  'rewrite' => array('slug' => $slug),
-  	  'supports' => array('title','editor','thumbnail','comments','tags'),
+  	  'supports' => array('title','editor','thumbnail','tags'),
       //'taxonomies' => array('post_tag')
     )
   );
@@ -61,7 +61,7 @@ function fbe_feat_meta_box() {
       'side',
       'low'
     );
-   
+
 
   }
 }
@@ -75,7 +75,7 @@ wp_nonce_field( 'fbe_feat_meta_box', 'fbe_feat_meta_box_nonce' );
 
 $feature_event_value = get_post_meta($post->ID, 'feature_event', true);
 
-if($feature_event_value == "yes"){ 
+if($feature_event_value == "yes"){
 $field_id_checked = 'checked="checked"';
 }else{
 $field_id_checked = '';
@@ -87,7 +87,7 @@ echo '<label for="location">Feature this event</label>
 
 
 function fbe_meta_box_callback( $post ) {
- 
+
   wp_nonce_field( 'facebook_events_meta_box', 'facebook_events_meta_box_nonce' );
 
   $facebook_event_id = get_post_meta( $post->ID, 'facebook_event_id', true );
@@ -118,17 +118,17 @@ function fbe_meta_box_callback( $post ) {
    $start_date = strtotime($start_date);
    $start_date  = date('m/d/Y', $start_date);
    }else{ $start_date = '';}
-   
+
    if($start_time != ''){
    $start_time = strtotime($start_time);
    $start_time = date('g:i a', $start_time);
-   }else{$start_time ='';}   
-   
+   }else{$start_time ='';}
+
    if($end_date != ''){
    $end_date = strtotime($end_date);
    $end_date = date('m/d/Y', $end_date);
     }else{ $end_date = '';}
-  
+
    if($end_time != ''){
    $end_time = strtotime($end_time);
    $end_time = date('g:i a', $end_time);
@@ -143,10 +143,10 @@ function fbe_meta_box_callback( $post ) {
   echo '<br />';
   echo '<label for="event_starts">Event Starts</label>';
   echo '<input type="text" id="event_starts" name="event_starts" value="'. sanitize_text_field( $start_date ) .'" size="10">@<input type="text" id="start_time" name="start_time" value="'. sanitize_text_field( $start_time ) .'"" size="8" />';
- 
+
   $event_starts_sort_field = strtotime($start_date);
   $event_starts_sort_field = date("Y-m-d",$event_starts_sort_field);
-  
+
   echo '<input type="hidden" id="event_starts_sort_field" name="event_starts_sort_field" value="'.sanitize_text_field( $event_starts_sort_field ).'" size="10">';
   echo '<br />';
   echo '<label for="event_ends">Event Ends</label>';
@@ -209,7 +209,7 @@ function fbe_save_meta_box_data( $post_id ) {
   if ( ! wp_verify_nonce( $_POST['fbe_feat_meta_box_nonce'], 'fbe_feat_meta_box' ) ) {
     return;
   }
- 
+
   if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
     return;
   }

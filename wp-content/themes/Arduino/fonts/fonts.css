@@ -11,7 +11,7 @@
 
 /* TYPONINE SANS PRO - LIGHT */
 @font-face {
-    font-family: 'Typonine Sans Pro';
+    font-family: 'Typonine Sans Light';
     src: url("typoninesanspro-light-webfont.eot");
     src: url("typoninesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("typoninesanspro-light-webfont.woff") format("woff"), url("typoninesanspro-light-webfont.svg") format("svg");
     font-weight: 100;
@@ -97,7 +97,7 @@
 
 /* TYPONINE MONO - LIGHT */
 @font-face {
-    font-family: 'Typonine Sans Mono';
+    font-family: 'Typonine Sans Mono Light';
     src: url("typsansmono-light-webfont.eot");
     src: url("typsansmono-light-webfont.eot?#iefix") format("embedded-opentype"), url("typsansmono-light-webfont.woff") format("woff"), url("typsansmono-light-webfont.svg") format("svg");
     font-weight: 100;

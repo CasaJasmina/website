@@ -1,4 +1,3 @@
-
 <?php
 /**
 * The template for displaying all projects
@@ -18,6 +17,8 @@ get_header(); ?>
 	<!--
 	<div class=header>-->
 
+
+
 	<?php
 	$cat = get_term_by('name', single_cat_title('',false), 'category');
 
@@ -32,73 +33,67 @@ get_header(); ?>
 
 
 		<?php
+
 		$args = array (
 		'post_type' => 'facebook_events',
 		'posts_per_page' => -1,
+		'key'=> 'event_starts',
+		'orderby'			=> 'meta_value_num',
 		'order' => 'ASC',
 		);
 		query_posts($args);
 		if ( have_posts() ) {
 			echo '<div class="entry-content">';
 			?>
-			<div id="first-post-row" class="row" >
+
+			<div id="facebook-post-row" class="row" >
 
 				<?php
 				while ( have_posts() ) : the_post();
-
-				//	if ( has_category()){ //get the category
-				$categories = get_the_category();
+				$event_start_day = get_fbe_date('event_starts','j');
+				$event_start_th = get_fbe_date('event_starts','S');
+				$event_start_month = get_fbe_date('event_starts','M ');
 
 				?>
 
 
-				<div class="columns small-12 medium-6 large-3 banner">
+				<div class="columns small-12 medium-6 large-3 facebook-thumbs">
 
-					<a href="<?php echo get_permalink() ?>"
-						class="<?php foreach ($categories as $cat){ echo($cat->cat_name). " "; } ?>
-						">
+					<a href="<?php echo get_permalink() ?>" class="event">
 
 						<?php
 						if ( has_post_thumbnail() ) {
 							echo the_post_thumbnail( 'thumbnail-front' );
 						}
-						$event_image = get_fbe_image('cover');
-							echo $event_image;
 						?>
 
-
-						<span class="title">
+					<span class="title">
 							<span>
 								<?php echo  " ".get_the_title()." "?>
 							</span>
-							<br>
-							<span class="author">
-								by <?php the_field('author'); ?>
-							</span>
 						</span>
+					</a>
 
-						<div class="categories">
-
-
-							<?php foreach ($categories as $cat){
-								echo '<span class='. $cat->slug. '></span>';
-							}
-
-							// always good to see exactly what you are working with
-							//var_dump($categories);
-
-							?>
+					<div class="fb-container">
+					<div class="Back-cricle-day">
+								<p class="facebook-day">
+								<?php echo $event_start_day  ?>
+								<span class="th">
+							<?php echo	$event_start_th ?>
+						</span>
+							</p>
 						</div>
+						<p class="fb-month">
+						<?php echo $event_start_month ?>
+					</p>
 
+			</div></div>
 
-				</div>
 			<?php endwhile; ?>
-
 		</div>
-		<?php arduino_paging_nav(); ?>
+
 
 	</div>
-
 	<?php }else {
 		get_template_part( 'content', 'none' );
 	}
@@ -107,31 +102,5 @@ get_header(); ?>
 	/* Restore original Post Data */
 	wp_reset_postdata();
 	?>
-
+</div>
 	<?php get_footer(); ?>
-
-
-
-
-<?php
-
- $fbe_query = new WP_Query( $args );
- if( $fbe_query->have_posts() ):
- while ( $fbe_query->have_posts() ) : $fbe_query->the_post();
-
- $event_title = get_the_title();
- $event_desc = get_the_content();
- $event_image = get_fbe_image('cover');
-
- ?>
- <img src="<?php echo get_fbe_image('ad'); ?>" alt="" />
- <h1><?php echo $event_title; ?></h1>
- <p><?php echo $event_desc; ?></p>
- <?php
-
- endwhile;
- endif;
-
- wp_reset_query();
-
- ?>
