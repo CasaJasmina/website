@@ -30,7 +30,7 @@ function create_fbe_post_event() {
       'menu_position' => 5,
       'menu_icon' =>  'dashicons-calendar',
   	  'rewrite' => array('slug' => $slug),
-  	  'supports' => array('title','editor','thumbnail','comments','tags'),
+  	  'supports' => array('title','editor','thumbnail','tags'),
       //'taxonomies' => array('post_tag')
     )
   );
