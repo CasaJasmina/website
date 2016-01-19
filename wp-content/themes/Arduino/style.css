@@ -210,11 +210,6 @@ input.header-search-input {
   box-shadow: none;
 }
 
-.custom-block .button{
-  color: balck !important;
-  width: 1000px;
-}
-
 input.header-search-input:focus {
   background: white;
   border-color: rgba(158,132,109,0.27);
@@ -333,7 +328,7 @@ position: relative;
   text-align: center;
   background-color: #ECF1F1;
   position: relative;
-
+  padding-bottom: 16%;
 }
 
 .custom-block:hover {
@@ -494,7 +489,9 @@ a.event span.date {
 .attachment-thumbnail-big {
   margin-bottom: 5%;
 }
-
+.attachment-thumbnail-front .wp-post-image{
+background-size: contain;
+}
 .page-posts .credits{
   position: relative;
 }
