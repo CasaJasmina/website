@@ -15,8 +15,8 @@ function create_fbe_post_event() {
     array(
       'labels' => array(
         'name' => __( 'Facebook Events' ),
-        'singular_name' => __( 'Facebook Event' )
-        'all_items'           => __( 'All facebook Events' ),
+        'singular_name' => __( 'Facebook Event' ),
+        'all_items'           => __('All facebook Events'),
         'view_item'           => __( 'View All facebook Event' ),
         'add_new_item'        => __( 'Add New All facebook Event' ),
         'add_new'             => __( 'Add New' ),

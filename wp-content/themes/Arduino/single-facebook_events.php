@@ -64,8 +64,48 @@ get_header(); ?>
 
 
 <div class="columns small-12 medium-12 large-3">
-	<h2>Event Details</h2>
+
+  <?php
+
+  $event_start_day = get_fbe_date('event_starts','j');
+  $event_start_th = get_fbe_date('event_starts','S');
+  $event_start_month = get_fbe_date('event_starts','M ');
+
+  ?>
+
+  <div class="fb-container-single-event">
+  <div class="Back-cricle-day-single-event">
+    <span class="th-single-event">
+  <?php echo	$event_start_th ?>
+</span>
+        <p class="facebook-day-single-event">
+        <?php echo $event_start_day  ?>
+      </p>
+    </div>
+    <p class="fb-month-single-event">
+    <?php echo $event_start_month ?>
+    <?php if($event_start_time) {echo '&nbsp  &nbsp'.$event_start_time; } ?>
+    <?php if($event_end_time) {echo '&nbsp-&nbsp'.$event_end_time; } ?>
+  </p>
+<?php if($tickets){?>
+</br></br></br>
+  <img class ="Back-cricle-day-single-event" src="http://localhost/~tommasolaterza/casajasminagit/website/wp-content/themes/Arduino/images/TicketIcon.png">
+  <p class="fb-month-single-event">
+    <a href="<?php echo $tickets; ?>" target="_blank">Get Tickets</a><?php } ?>
+   </p>
+<?php if ($fb_link){?>
+</br></br></br>
+<img class ="Back-cricle-day-single-event" src="http://localhost/~tommasolaterza/casajasminagit/website/wp-content/themes/Arduino/images/fbIcon.png">
+<p class="fb-month-single-event">
+<a href="<?php echo $fb_link; ?>" target="_blank">View event on Facebook</a><?php } ?>
+</p>
+  </div>
+
+
+
+	<!--<h2>Event Details</h2>-->
   <ul class="event-details">
+
 <?php if(get_option('fbe_venue') == 'false'){ ?>
 
   <?php if($location){
@@ -89,19 +129,20 @@ get_header(); ?>
   ?>
   <?php } ?>
 <?php } ?>
-<?php if($event_start_date){?><li><b>Starts</b><br/><?php echo $event_start_date; if($event_start_time){echo '_'.$event_start_time; } ?></li><?php } ?>
+  <!-- <?php if($event_start_date){?><li><b>Starts</b><br/><?php echo $event_start_date; if($event_start_time){echo '_'.$event_start_time; } ?></li><?php } ?>
   <?php if($event_end_date){?><li><b>Ends</b><br/> <?php echo $event_end_date; if($event_end_time){echo '_'.$event_end_time; } ?></li><?php } ?>
   <?php if ($fb_link){?><li><b>Facebook Event</b><br/><a href="<?php echo $fb_link; ?>" target="_blank">View event on Facebook</a></li><?php } ?>
   <?php if($tickets){?><li><b>Admission</b><br/><a href="<?php echo $tickets; ?>" target="_blank">Get Tickets</a></li><?php } ?>
 
 
-</ul>
 
-  <!--  <?php if($event_start_date){?><li><div class="start-icon-fb-event"></div><div class="start-event-date"><?php echo $event_start_date; if($event_start_time){echo '_'.$event_start_time; } ?></div></li><?php } ?>
+
+
+ <?php if($event_start_date){?><li><div class="start-icon-fb-event"></div><div class="start-event-date"><?php echo $event_start_date; if($event_start_time){echo '_'.$event_start_time; } ?></div></li><?php } ?>
       <?php if($event_end_date){?><li> <?php echo $event_end_date; if($event_end_time){echo '_'.$event_end_time; } ?></li><?php } ?>
       <?php if ($fb_link){?><li><div class="start-icon-fb-event"></div><a href="<?php echo $fb_link; ?>" target="_blank">View event on Facebook</a></li><?php } ?>
       <?php if($tickets){?><li><div class="start-icon-fb-event"></div><a href="<?php echo $tickets; ?>" target="_blank">Get Tickets</a></li><?php } ?>
-        </ul>-->
+        </ul></ul>-->
 
 </div>
 

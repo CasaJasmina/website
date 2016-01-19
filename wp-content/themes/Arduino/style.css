@@ -210,6 +210,11 @@ input.header-search-input {
   box-shadow: none;
 }
 
+.custom-block .button{
+  color: balck !important;
+  width: 1000px;
+}
+
 input.header-search-input:focus {
   background: white;
   border-color: rgba(158,132,109,0.27);
@@ -321,13 +326,14 @@ min-height: 300px;
 position: relative;
 }*/
 
+
+
 .custom-block {
   display: block;
   text-align: center;
   background-color: #ECF1F1;
-  padding-bottom: 1em;
   position: relative;
-  padding: 0px 20px 42px 25px;
+
 }
 
 .custom-block:hover {
@@ -1043,12 +1049,14 @@ input[type="checkbox"]  {
 /* Facebook-importer*/
 .fbe-full-width{
 margin-top: 3%;
+min-width: 100%;
+
 }
 .event-details{
   padding-left: 0px !important;
 }
-.event-details a{
-
+.fb-month-single-event a{
+font-size: 0.8em;
 }
 .next_fb_event {
 float:right !important;
@@ -1076,6 +1084,47 @@ padding-bottom: 15px !important;
   min-width: 200px;
 }
 
+
+
+.fb-container-single-event{
+  margin-top: 50px;
+  min-width: 20px;
+}
+.Back-cricle-day-single-event{
+  background-color:#E67E22;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.facebook-day-single-event{
+  text-align: right;
+  color:  white;
+  text-transform: uppercase;
+  font-family: 'Typonine Sans Mono Light';
+  font-size: 1.7em;
+  margin-top: 5px;
+  margin-right: 10px !important;
+}
+.fb-month-single-event{
+  color: #4E5B61;
+  text-transform: uppercase;
+  font-family: 'Typonine Sans pro';
+  text-align: left;
+  font-weight: 600;
+  float: left;
+  padding-left: 10px;
+}
+.th-single-event{
+  font-size: 7px;
+  color: white;
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 38px;
+}
+
+
+
 .Back-cricle-day{
   background-color:#E67E22;
   border-radius: 100%;
@@ -1095,6 +1144,7 @@ padding-bottom: 15px !important;
   right: 5%;
 
 }
+
 .th{
   font-size: 7px;
   color: white;
@@ -1119,13 +1169,22 @@ color: #E67E22 !important;
 width: 30px;
 height: 30px;
 background-color: #E67E22;
-
-
 }
-.start-event-date{
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* very large */
@@ -1420,7 +1479,6 @@ background-color: #E67E22;
     font-size: 40px;
   }
 
-
 }
 
 /* medium medio */
@@ -1432,7 +1490,7 @@ background-color: #E67E22;
 
   }
 .header-img{
-  margin-bottom: 15%;
+  margin-bottom: 5%;
 }
 
 .large-4.medium-6.small-12.columns{
@@ -1451,8 +1509,13 @@ background-color: #E67E22;
     float:left !important;
   }
   .columns.small-12.medium-6.large-3.banner{
-  margin-bottom: 5%;
+  margin-bottom: 0%;
   }
+
+  .columns.small-12.medium-6.large-3{
+    margin-top: 5%;
+  }
+
 
 
 }
@@ -1499,6 +1562,10 @@ background-color: #E67E22;
   .logoleft{
     min-width: 60%;
     padding-top: 5%;
+  }
+
+  .columns.small-12.medium-6.large-3{
+    margin-top: 5%;
   }
 
 
