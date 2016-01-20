@@ -496,6 +496,12 @@ background-size: contain;
   position: relative;
 }
 
+.bio-photo {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
 .page-posts img{
   margin-top: 0%;
 }
