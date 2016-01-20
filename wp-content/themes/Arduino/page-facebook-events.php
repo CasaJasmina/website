@@ -57,7 +57,7 @@ get_header(); ?>
 				?>
 
 
-				<div class="columns small-12 medium-6 large-3 facebook-thumbs">
+				<div class="columns small-12 medium-6 large-3 facebook-thumbs ">
 
 					<a href="<?php echo get_permalink() ?>" class="event">
 
