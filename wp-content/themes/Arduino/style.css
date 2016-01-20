@@ -348,6 +348,12 @@ span.title{
 margin-left: -3px !important;
 }
 
+[class*="column"]+[class*="column"].banner:last-child{
+float:left;
+}
+[class*="column"]+[class*="column"].facebook-thumbs:last-child{
+float:left;
+}
 
 .video-wrapper + p {
   position: absolute;
