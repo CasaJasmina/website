@@ -89,13 +89,13 @@ get_header(); ?>
   </p>
 <?php if($tickets){?>
 </br></br></br>
-  <img class ="Back-cricle-day-single-event" src="http://localhost/~tommasolaterza/casajasminagit/website/wp-content/themes/Arduino/images/TicketIcon.png">
+  <img class ="Back-cricle-day-single-event" src="<?php echo get_template_directory_uri(); ?>/images/TicketIcon.png">
   <p class="fb-month-single-event">
     <a href="<?php echo $tickets; ?>" target="_blank">Get Tickets</a><?php } ?>
    </p>
 <?php if ($fb_link){?>
 </br></br></br>
-<img class ="Back-cricle-day-single-event" src="http://localhost/~tommasolaterza/casajasminagit/website/wp-content/themes/Arduino/images/fbIcon.png">
+<img class ="Back-cricle-day-single-event" src="<?php echo get_template_directory_uri(); ?>/images/fbIcon.png"">
 <p class="fb-month-single-event">
 <a href="<?php echo $fb_link; ?>" target="_blank">View event on Facebook</a><?php } ?>
 </p>
