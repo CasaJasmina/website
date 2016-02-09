@@ -79,6 +79,11 @@
 
 	  			<div class="large-4 medium-4 columns">
 	  				<ul id="arduinoSocialLinks" class="arduino-social-links">
+							<li>
+								<a href="mailto:casajasmina@arduino.cc" target="_blank">
+									<img src="<?php echo get_template_directory_uri(); ?>/images/mail.png">
+								</a>
+							</li>
 	  					<li>
 	  						<a href="https://twitter.com/casajasmina" target="_blank">
 	  							<img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png">
