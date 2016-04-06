@@ -1,9 +1,5 @@
 <?php
 ?>
-
-
-
-
       <div class="header-git-commit">
       </div>
 
@@ -63,10 +59,13 @@
                                 relatives, flatmates, friends? The times you use an object or piece of  furniture? Your sleeping
                                 behaviours? The food you eat? The tv series you watch?
             </p>
-            <form>
-              <textarea class="text-form" type="text" name="Question1" ></textarea><br>
+
+            <form name="privacy" id="privacy" method="post" action="javascript:void(0);">
+                <textarea class="text-form" type="text" name="privacy" ></textarea><br>
+                <input type="submit" name="Submit" value="submit" class="button buttonGit"/>
             </form>
-            <a href="#" class="button buttonGit">submit</a>
+
+
         </div>
 
       <hr>
@@ -79,10 +78,13 @@
         </div>
             <p id="text-questions"> What objects make a space feel like a home? What makes it more familiar to you? What makes your stay in a place more comfortable? What sparks good memories at home?
             </p>
-            <form>
-              <textarea class="text-form" type="text" name="Question1" ></textarea><br>
+
+            <form name="familiar" id="familiar" method="post" action="javascript:void(0);">
+              <textarea class="text-form" type="text" name="familiar" ></textarea><br>
+              <input type="submit" name="Submit" value="submit" class="button buttonGit"/>
+
             </form>
-            <a href="#" class="button buttonGit">submit</a>
+
         </div>
 
       <hr>
@@ -95,10 +97,11 @@
         </div>
             <p id="text-questions"> What does smart furniture mean to you?? How could a smart table enhance your work experience? Or your dining  experience? What information would you access if your bedroom or kitchen could talk with you or with each other?
             </p>
-            <form>
-              <textarea class="text-form" type="text" name="Question1" ></textarea><br>
+
+            <form name="open" id="open" method="post" action="javascript:void(0);">
+              <input type="textarea" class="text-form" type="text" name="open" ></textarea><br>
+              <input type="submit" name="Submit" value="submit" class="button buttonGit"/>
             </form>
-            <a href="#" class="button buttonGit">submit</a>
         </div>
 
       <hr>
@@ -112,10 +115,12 @@
             <p id="text-questions"> What do you use to communicate with your friends? How many hours a day are you on internet? Who’s the last person you contacted through the internet?
                                     Which part of your body you will use to communicate in the house of the future?
             </p>
-            <form>
-              <textarea class="text-form" type="text" name="Question1" ></textarea><br>
+
+            <form name="social" id="social" method="post" action="javascript:void(0);">
+              <textarea class="text-form" type="text" name="social" ></textarea><br>
+              <input type="submit" name="Submit" value="submit" class="button buttonGit"/>
             </form>
-            <a href="#" class="button buttonGit">submit</a>
+
         </div>
 
 
@@ -134,20 +139,18 @@
 
 
 
-
-
-
-
-
-
-
-
-
       <script type="text/javascript">
-            $("#test").submit(function(){
+            $("form").submit(function(event){
+
+              var label=event.currentTarget.id
+              
+              var message=$(".text-form."+label)
+
+              console.log(label);
+              console.log(message);
+
                 var str = $(this).serialize();
-                console.log(str);
-                $.post('<?php echo( $url = plugin_dir_url( gitCommit ));?>gitCommit/gitCommit_api.php', str, function(result){
+                $.post('<?php echo  $url = plugin_dir_url(gitCommit);?>gitCommit/gitCommit_api.php', str, function(result){
                     console.log(result); // the result variable will contain any text echoed by getResult.php
                 });
                 return(false);
