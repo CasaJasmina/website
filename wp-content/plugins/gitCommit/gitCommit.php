@@ -22,19 +22,17 @@
    include('gitCommit_admin.php');
  }
 
+
  function ShowTest(){
    include('gitCommit_test.php');
  }
- 
- function ShowForm(){
+
+ function ShowForm($atts){
    include('gitCommit_form.php');
  }
 
-
  add_action( 'admin_menu', 'gitCommit_menu' );
-
-
-
+ add_shortcode( 'gitCommit', 'ShowForm' );
 
 
 
