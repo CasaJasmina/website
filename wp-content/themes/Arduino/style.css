@@ -1405,7 +1405,7 @@ input[type="checkbox"] {
   width: 100%;
   min-height: 314px;
   color: #fff;
-  background-image: url(http://casajasmina.arduino.cc/wp-content/uploads/2015/05/header-git-commit.png);
+  background-image: url(images/git-commit/header-git-commit.png);
   background-position: center;
   background-size: 1311px 314px;
   background-repeat: no-repeat;
@@ -1425,7 +1425,7 @@ input[type="checkbox"] {
   text-align: center;
   margin: 50px 0 50px 0;
 }
-.row.git-commit-footer{
+.row.git-commit-topics{
 padding: 0 0 30px 0;
 background-color: #fff;
 text-align: center;
@@ -1435,15 +1435,11 @@ background-color: #fff;
 text-align: center;
 }
 
-.sticky{
-  position: absolute;
-  bottom: 0px;
-}
-
 hr{
   width: 60%;
   color: #9A8478;
-  margin-bottom: 70px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .background-text.yellow p{
   background-color: #EDC12D;
@@ -1451,9 +1447,31 @@ hr{
 .background-text.yellow h1{
   background-color: #EDC12D;
 }
+
+.background-text.orange p{
+  background-color: #F39C12;
+}
+.background-text.orange h1{
+  background-color: #F39C12;
+}
+
+.background-text.gold p{
+  background-color: #9E846D;
+}
+.background-text.gold h1{
+  background-color: #9E846D;
+}
+
+.background-text.red p{
+  background-color: #D35400;
+}
+.background-text.red h1{
+  background-color: #D35400;
+}
 .background-text p{
   font-family: "Typonine Sans light";
   font-weight: 300;
+  text-transform: uppercase;
   font-style: normal;
   font-size: 35px;
   color: #fff;
@@ -1463,9 +1481,10 @@ hr{
   padding: 0 20px 0 20px;
 }
 .background-text h1{
-  font-family: "Typonine Sans pro";
+  font-family: "Typonine Sans Pro";
   font-weight: 300;
   font-style: normal;
+  text-transform: uppercase;
   font-size: 35px;
   color: #fff;
   display: inline;
@@ -1476,4 +1495,81 @@ hr{
 #text-questions{
   font-family: "Typonine Sans light";
   color: #9A8478;
+}
+textarea.text-form{
+  width: 100%;
+  height: 200px;
+  background-color: #F2F1F0;
+  border: none;
+  font-family: "Typonine Sans light";
+  color: #4E5B61;
+  font-size: 1em;
+  line-height: 1.625;
+  overflow: auto;
+  resize: none;
+  margin: 30px 0 30px 0;
+}
+
+.buttonGit:hover, .buttonGit:active, .buttonGit:focus, .buttonGit:visited{
+  color: #4E5B61 !important;
+  font-family: "Typonine Sans light";
+  box-shadow: 0 4px #BDC7C7 !important;
+  padding: 10px 70px;
+}
+
+.button.buttonGit{
+  text-transform: uppercase;
+  font-family: "Typonine Sans light";
+  background-color: #F2F1F0;
+  box-shadow: 0 6px #BDC7C7;
+  color: #4E5B61 !important;
+  border: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 10px 70px;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  float: right;
+  transition: all ease-out .1s;
+}
+
+.topics:hover{
+  border-bottom: 10px solid #EDC12D;
+}
+
+.blue, .yellow, .red, .gold{
+  color: #998478;
+}
+.blue:hover, .yellow:hover, .red:hover, .gold:hover{
+  color: #005C5F;
+}
+
+.topics{
+  padding-bottom: 10px;
+}
+
+.git-footer{
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+
+/* medium medio */
+
+@media (max-width: 1025px) {
+  .header-img .wide-image {
+    min-width: 100%;
+  }
+  .topics{
+    font-size: 0.8em;
+  }
+
 }
