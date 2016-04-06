@@ -12,23 +12,52 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 
- /** Step 2 (from text above). */
- add_action( 'admin_menu', 'my_plugin_menu' );
 
- /** Step 1. */
- function my_plugin_menu() {
- 	add_options_page( 'My Plugin Options', 'My Plugin', 'manage_options', 'my-unique-identifier', 'my_plugin_options' );
+
+ function gitCommit_menu() {
+ 	add_options_page( 'GitCommit', 'gitCommit', 'manage_options' , 'GitCommit', 'gitCommit_admin' );
  }
 
- /** Step 3. */
- function my_plugin_options() {
- 	if ( !current_user_can( 'manage_options' ) )  {
- 		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
- 	}
- 	echo '<div class="wrap">';
- 	echo '<p>Here is where the form would go if I actually had options.</p>';
- 	echo '</div>';
+ function gitCommit_admin() {
+   include('gitCommit_admin.php');
  }
+
+ function openIssue(){
+   $request = new HttpRequest();
+   $request->setUrl('https://api.github.com/repos/casajasmina/issueprinter-Prov/issues');
+   $request->setMethod(HTTP_METH_POST);
+
+   $request->setHeaders(array(
+     'postman-token' => '84b7a6c1-5746-ba27-634a-60bfe2678d7f',
+     'cache-control' => 'no-cache',
+     'authorization' => 'Basic Z2l0Q29tbWl0OmFmY2M4NWQyYjgyZDUyMDY2YjkxNDRlNGI1Yjk1MmE2Y2RmNGUxYTY='
+   ));
+
+   $request->setBody('{
+     "title": "Found a bug",
+     "body": "having a problem with this.",
+     "assignee": "octocat",
+     "milestone": 1,
+     "labels": [
+       "bug"
+     ]
+   }');
+
+   try {
+     $response = $request->send();
+
+     echo $response->getBody();
+   } catch (HttpException $ex) {
+     echo $ex;
+   }
+}
+
+
+
+ add_action( 'admin_menu', 'gitCommit_menu' );
+
+
+
 
 
 
