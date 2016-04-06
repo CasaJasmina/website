@@ -21,7 +21,10 @@
 <!--<![endif]-->
 <head>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
-<script   src="<?php echo(get_template_directory_uri())?>/js/jquery.js"></script>	<meta charset="<?php bloginfo( 'charset' ); ?>">
+
+	<script   src="<?php echo(get_template_directory_uri())?>/js/jquery.js"></script>
+
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
