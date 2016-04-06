@@ -22,36 +22,13 @@
    include('gitCommit_admin.php');
  }
 
- function openIssue(){
-   $request = new HttpRequest();
-   $request->setUrl('https://api.github.com/repos/casajasmina/issueprinter-Prov/issues');
-   $request->setMethod(HTTP_METH_POST);
-
-   $request->setHeaders(array(
-     'postman-token' => '84b7a6c1-5746-ba27-634a-60bfe2678d7f',
-     'cache-control' => 'no-cache',
-     'authorization' => 'Basic Z2l0Q29tbWl0OmFmY2M4NWQyYjgyZDUyMDY2YjkxNDRlNGI1Yjk1MmE2Y2RmNGUxYTY='
-   ));
-
-   $request->setBody('{
-     "title": "Found a bug",
-     "body": "having a problem with this.",
-     "assignee": "octocat",
-     "milestone": 1,
-     "labels": [
-       "bug"
-     ]
-   }');
-
-   try {
-     $response = $request->send();
-
-     echo $response->getBody();
-   } catch (HttpException $ex) {
-     echo $ex;
-   }
-}
-
+ function ShowTest(){
+   include('gitCommit_test.php');
+ }
+ 
+ function ShowForm(){
+   include('gitCommit_form.php');
+ }
 
 
  add_action( 'admin_menu', 'gitCommit_menu' );

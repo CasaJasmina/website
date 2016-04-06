@@ -18,7 +18,9 @@
     } else {
         //Normal page display
         $repo = get_option('gitCommit_repo');
-        $user = get_option('gitCommit_user');
+        $clientID = get_option('gitCommit_clientID');
+        $clientSecret = get_option('gitCommit_clientSecret');
+
     }
         ?>
 
@@ -26,12 +28,11 @@
 <div class="wrap">
     <?php    echo '<h2>gitCommit</h2>'; ?>
 
-    <form name="gitCommit_form" method="post" action="javascript:submitForm();">
-      <input type="submit" name="Submit" value="testapi"/>
-    </form>
+
+
+
 
     <form name="gitCommit_form" method="post" action="<?php echo  $_SERVER['REQUEST_URI']; ?>">
-
     <input type="hidden" name="gitCommit_hidden" value="Y">
 
         <?php echo '<h4>gitCommit Settings</h4>'; ?>
@@ -55,14 +56,4 @@
     </form>
 </div>
 
-<script type="text/javascript">
-   function submitForm(){
-      $("form").submit(function(){
-          var str = $(this).serialize();
-          $.ajax('getResult.php', str, function(result){
-              alert(result); // the result variable will contain any text echoed by getResult.php
-          });
-          return(false);
-      });
-    }
-</script>
+<?php echo(Showtest()); ?>
