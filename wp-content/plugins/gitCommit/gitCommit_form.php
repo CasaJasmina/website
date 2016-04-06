@@ -143,14 +143,13 @@
             $("form").submit(function(event){
 
               var label=event.currentTarget.id
-              
-              var message=$(".text-form."+label)
+
+              var message=$("#"+label+" .text-form").val();
 
               console.log(label);
               console.log(message);
 
-                var str = $(this).serialize();
-                $.post('<?php echo  $url = plugin_dir_url(gitCommit);?>gitCommit/gitCommit_api.php', str, function(result){
+                $.post('<?php echo  $url = plugin_dir_url(gitCommit);?>gitCommit/gitCommit_api.php', {label:label,message:message}, function(result){
                     console.log(result); // the result variable will contain any text echoed by getResult.php
                 });
                 return(false);

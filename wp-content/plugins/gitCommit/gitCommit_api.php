@@ -57,11 +57,8 @@ if ($err) {
 ?>
 
 <?php
-    if ($_POST['gitCommit_hidden'] == 'F') {
-        //Form data sent
-      echo 'success';
-        openIssue("cippa", "lippa","ohhhh");
-    } else {
-        echo 'puppa';
-    }
+    $label= $_POST['label'];
+    $message= $_POST['message'];
+    $title= $_POST['label'];
+    openIssue($title, $label, $message);
 ?>
