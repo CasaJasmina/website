@@ -1441,44 +1441,42 @@ hr{
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.background-text.yellow p{
+
+.background-text.yellow p, .background-text.yellow h1{
   background-color: #EDC12D;
+  box-shadow: 15px 0 0 #EDC12D, -15px 0 0 #EDC12D;
 }
-.background-text.yellow h1{
-  background-color: #EDC12D;
-}
-
-.background-text.orange p{
+.background-text.orange p, .background-text.orange h1 {
   background-color: #F39C12;
+  box-shadow: 15px 0 0 #F39C12, -15px 0 0 #F39C12;
+
 }
-.background-text.orange h1{
-  background-color: #F39C12;
+.background-text.gold p, .background-text.gold h1 {
+  background-color: #9E846D;
+  box-shadow: 15px 0 0 #9E846D, -15px 0 0 #9E846D;
+
+}
+.background-text.red p, .background-text.red h1 {
+  background-color: #D35400;
+  box-shadow: 15px 0 0 #D35400, -15px 0 0 #D35400;
+
 }
 
-.background-text.gold p{
-  background-color: #9E846D;
-}
-.background-text.gold h1{
-  background-color: #9E846D;
-}
 
-.background-text.red p{
-  background-color: #D35400;
-}
-.background-text.red h1{
-  background-color: #D35400;
-}
 .background-text p{
   font-family: "Typonine Sans light";
   font-weight: 300;
   text-transform: uppercase;
   font-style: normal;
-  font-size: 35px;
+  font-size: 20px;
   color: #fff;
-  display: inline;
   letter-spacing: 4px;
-  line-height: 44px;
-  padding: 0 20px 0 20px;
+  line-height: 30px;
+  display: inline;
+}
+.background-text.title{
+  margin-bottom: 7px;
+
 }
 .background-text h1{
   font-family: "Typonine Sans Pro";
@@ -1487,12 +1485,11 @@ hr{
   text-transform: uppercase;
   font-size: 35px;
   color: #fff;
-  display: inline;
   letter-spacing: 4px;
   line-height: 44px;
-  padding: 0 20px 0 20px;
+  display: inline;
 }
-#text-questions{
+.text-questions{
   font-family: "Typonine Sans light";
   color: #9A8478;
 }
@@ -1560,6 +1557,24 @@ textarea.text-form{
     text-align: center;
     background-color: #fff;
 }
+#sticky-menue .topics:hover{
+border-bottom: 0;
+}
+
+#sticky-menue .icon{
+  height:60px;
+  display: inline;
+  float: left;
+}
+#sticky-menue .name{
+  display: inline;
+  float: left;
+  text-align:left !important;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+
 
 
 /* medium medio */
