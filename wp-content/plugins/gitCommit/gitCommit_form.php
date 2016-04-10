@@ -67,7 +67,8 @@
   <!--CLOSING MENU SECTION-->
   <hr>
 
-    <div class="container">
+  <div class="container row">
+    <div class="medium-10 medium-offset-1 columns">
 
   <div class="row" id="privacy">
     <div class="large-12 columns">
@@ -80,10 +81,10 @@
       <p class="text-questions">
         In the house of the future would you share the information about your everyday activities and habits with other people? Are you willing to share the conversations you have with your relatives, flatmates, friends? The times you use an object or piece of  furniture? Your sleeping behaviours? The food you eat? The tv series you watch?
       </p>
-      <form name="privacy"  method="post" action="javascript:void(0);">
+      <form class="question" name="privacy"  method="post" action="javascript:void(0);">
         <textarea class="text-form" type="text" name="privacy" >
         </textarea>
-        <input type="submit" name="Submit" value="submit" class="button buttonGit"/>
+        <input type="submit" name="Submit" value="submit" class="button base primary"/>
       </form>
     </div>
   </div>
@@ -103,9 +104,9 @@
           What objects make a space feel like a home? What makes it more familiar to you? What makes your stay in a place more comfortable? What sparks good memories at home?
         </p>
 
-        <form name="familiar"  method="post" action="javascript:void(0);">
+        <form  class="question"  name="familiar"  method="post" action="javascript:void(0);">
           <textarea class="text-form" type="text" name="familiar" ></textarea><br>
-          <input type="submit" name="Submit" value="submit" class="button buttonGit"/>
+          <input type="submit" name="Submit" value="submit" class="button base primary"/>
         </form>
       </div>
     </div>
@@ -123,9 +124,9 @@
         <p class="text-questions">
           What does smart furniture mean to you?? How could a smart table enhance your work experience? Or your dining  experience? What information would you access if your bedroom or kitchen could talk with you or with each other?
         </p>
-        <form name="open"  method="post" action="javascript:void(0);">
+        <form class="question"  name="open"  method="post" action="javascript:void(0);">
           <textarea class="text-form" type="text" name="open" ></textarea><br>
-          <input type="submit" name="Submit" value="submit" class="button buttonGit"/>
+          <input type="submit" name="Submit" value="submit" class="button base primary"/>
         </form>
       </div>
     </div>
@@ -143,12 +144,13 @@
         <p class="text-questions">
           What do you use to communicate with your friends? How many hours a day are you on internet? Who’s the last person you contacted through the internet? Which part of your body you will use to communicate in the house of the future?
         </p>
-        <form name="social" method="post" action="javascript:void(0);">
+        <form class="question" name="social" method="post" action="javascript:void(0);">
           <textarea class="text-form" type="text" name="social" ></textarea><br>
-          <input type="submit" name="Submit" value="submit" class="button buttonGit"/>
+          <input type="submit" name="Submit" value="submit" class="button base primary"/>
         </form>
       </div>
     </div>
+  </div>
   </div>
 
 
@@ -193,19 +195,59 @@
     </div>
   </div>
 
+<div id="subscription" class="">
+  <div class="container" id="subscriptioninside">
+    <div class="row">
+      <div class="medium-7 columns">
+        <div class="title">
+          <h1>thanks for your contribution</h1>
+        </div>
+        <div class="subtitle">
+          <p>thanks for taking the time to respond to this question</p>
+          <p>Subscribe to Casa Jasmina newsletter to stay updated about the next events</p>
+        </div>
+      </div>
+      <div class="medium-5 columns">
+        <div class="pupi">
+          <img src="<?php echo bloginfo('template_directory') ?>/images/pupi.svg">
+        </div>
+      </div>
+    </div>
+    <div class="row email">
+      <div class="medium-12 columns">
+        <form id="subscribe-form"name="newsletter" class="newsletter" method="post" action="javascript:void(0);">
+          <input type="text" name="email" value="" />
+          <input type="submit" name="Submit" value="register" class="button base primary"/>
+          <input type="submit" name="cancel" value="no thanks" class="button base secondary cancel"/>
+
+        </form>
+          <?php
+            if( function_exists( 'mc4wp_show_form' ) ) {
+	            mc4wp_show_form();
+            }
+          ?>
+      </div>
+    </div>
+  </div>
+</div>
 
 
       <script type="text/javascript">
-            $("form").submit(function(event){
+            $(".question").submit(function(event){
               var label=event.currentTarget.name
               var message=$("#"+label+" .text-form").val();
-
+              if (message.length>140){
+                var title=message.substring(0, 140)+"...";
+              }else{
+                title=message;
+              }
               console.log(label);
               console.log(message);
 
-                $.post('<?php echo  $url = plugin_dir_url(gitCommit);?>gitCommit/gitCommit_api.php', {label:label,message:message}, function(result){
+                $.post('<?php echo  $url = plugin_dir_url(gitCommit);?>gitCommit/gitCommit_api.php', {label:label,message:message,title:title}, function(result){
                     console.log(result); // the result variable will contain any text echoed by getResult.php
-
+                    $("#subscription").removeClass("hide");
+                    clearForms();
                 });
                 return(false);
             });
@@ -239,5 +281,36 @@
               }
 
             });
+
+
+
+
+            var over;
+
+            $('#subscriptioninside').mouseenter(function(){
+              over=true;
+            });
+            $('#subscriptioninside').mouseleave(function(){
+              over=false;
+            });
+            $("#subscription").click(function(event) {
+              if(!over){
+                $("#subscription").addClass("hide");
+              }
+            });
+
+            $('#subscript .cancel').click(function(){
+              $("#subscription").addClass("hide");
+            });
+
+
+
+            function clearForms(){
+              $('form').trigger("reset");
+            }
+
+
+
+
 
       </script>

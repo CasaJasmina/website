@@ -59,6 +59,6 @@ if ($err) {
 <?php
     $label= $_POST['label'];
     $message= $_POST['message'];
-    $title= $_POST['label'];
+    $title= $_POST['title'];
     openIssue($title, $label, $message);
 ?>
