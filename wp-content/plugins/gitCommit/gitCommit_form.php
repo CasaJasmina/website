@@ -195,7 +195,7 @@
     </div>
   </div>
 
-<div id="subscription" class="">
+<div id="subscription" class="hide">
   <div class="container" id="subscriptioninside">
     <div class="row">
       <div class="medium-7 columns">
