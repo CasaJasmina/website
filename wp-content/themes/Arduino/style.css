@@ -1648,10 +1648,22 @@ textarea, textarea:focus {
     -moz-box-shadow: none;
     box-shadow: none;
 }
-#subscription .newsletter input {
+/*#subscription .newsletter input {
     float: left;
     margin-right: 20px;
+}*/
+
+@media (min-width: 1025px) {
+.newsletter{
+  margin-top:-100px;
 }
+
+
+.newsletter .button.base{
+  float: left;
+  margin-right: 20px;
+}
+
 .button.base {
     padding: 9px 25px!important;
     float: right;

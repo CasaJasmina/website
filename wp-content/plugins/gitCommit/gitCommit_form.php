@@ -195,7 +195,7 @@
     </div>
   </div>
 
-<div id="subscription" class="hide">
+<div id="subscription" class="">
   <div class="container" id="subscriptioninside">
     <div class="row">
       <div class="medium-7 columns">
@@ -213,21 +213,23 @@
         </div>
       </div>
     </div>
-    <div class="row email">
-      <div class="medium-12 columns">
-        <form id="subscribe-form"name="newsletter" class="newsletter" method="post" action="javascript:void(0);">
+    <div class="row newsletter">
+      <div class="medium-7 columns">
+    <?php
+      if( function_exists( 'mc4wp_show_form' ) ) {
+        mc4wp_show_form();
+      }
+    ?>
+    </div>
+  </div>
+        <!-- <form id="subscribe-form"name="newsletter" class="newsletter" method="post" action="javascript:void(0);">
           <input type="text" name="email" value="" />
           <input type="submit" name="Submit" value="register" class="button base primary"/>
           <input type="submit" name="cancel" value="no thanks" class="button base secondary cancel"/>
 
-        </form>
-          <?php
-            if( function_exists( 'mc4wp_show_form' ) ) {
-	            mc4wp_show_form();
-            }
-          ?>
-      </div>
-    </div>
+        </form>  -->
+
+
   </div>
 </div>
 
@@ -299,7 +301,7 @@
               }
             });
 
-            $('#subscript .cancel').click(function(){
+            $('#subscription .cancel').click(function(){
               $("#subscription").addClass("hide");
             });
 
