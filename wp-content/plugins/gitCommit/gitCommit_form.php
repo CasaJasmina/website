@@ -163,7 +163,7 @@
   </div>
 
 
-  <div class="row git-commit-icons" id="sticky-menue">
+  <!-- <div class="row git-commit-icons" id="sticky-menue">
     <div class="large-12 small-12 columns large-centered">
 
       <div class="large-3 small-3 columns topics">
@@ -202,7 +202,7 @@
       </div>
 
     </div>
-  </div>
+  </div> -->
 
 <div id="subscription" class="hide">
   <div class="container" id="subscriptioninside">
@@ -270,28 +270,29 @@
                 return false;
             });
 
-          $(window).scroll(function(){
+          // $(window).scroll(function(){
+          //
+          //     if ($('#privacy').visible(true)) {
+          //       $( "#sticky-menue" ).insertAfter("#privacy");
+          //       console.log("privacy");
+          //
+          //     }else if ($('#familiar').visible(true)) {
+          //       $( "#sticky-menue" ).insertAfter($('#familiar'));
+          //       console.log("familiar");
+          //
+          //     }else if ($('#open').visible(true)) {
+          //       $( "#sticky-menue" ).insertAfter($('#open'));
+          //       console.log("open");
+          //
+          //     }else if ($('#social').visible(true)) {
+          //       console.log("familiar");
+          //       $( "#sticky-menue" ).insertAfter($('#social'));
+          //       console.log("social");
+          //
+          //     }
+          //
+          //   });
 
-              if ($('#privacy').visible(true)) {
-                $( "#sticky-menue" ).insertAfter("#privacy");
-                console.log("privacy");
-
-              }else if ($('#familiar').visible(true)) {
-                $( "#sticky-menue" ).insertAfter($('#familiar'));
-                console.log("familiar");
-
-              }else if ($('#open').visible(true)) {
-                $( "#sticky-menue" ).insertAfter($('#open'));
-                console.log("open");
-
-              }else if ($('#social').visible(true)) {
-                console.log("familiar");
-                $( "#sticky-menue" ).insertAfter($('#social'));
-                console.log("social");
-
-              }
-
-            });
 
 
             var over;

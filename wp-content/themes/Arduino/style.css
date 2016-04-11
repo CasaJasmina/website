@@ -222,9 +222,7 @@ padding-right: 0px;
         -webkit-appearance: none;
         -moz-appearance: none;
     }
-    input {
-        -webkit-appearance: none;
-    }
+
     .button, .button:focus, .button.disabled, .button[disabled], .jfk-button, .jfk-button:focus, .jfk-button.disabled, .jfk-button[disabled] {
         top: 0;
         position: relative;
