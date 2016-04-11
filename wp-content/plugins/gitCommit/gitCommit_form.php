@@ -4,16 +4,19 @@
 
   </div>
 
-  <div class="row text-intro">
-    <p id="text-intro">
-      An interactive installation and exhibition about smart homes, and user response to  pervasive technologies entering our private spaces. The installation aims to further  the research that Casa Jasmina is carrying out regarding social home environment from an  open design and user centered perspective.
-
-In order to deeply understand the impact of IoT in the house for the possible stakeholders, an interactive system of four mini-printers will be set up at Palazzo Clerici.
-
-Each printer will be connected to Casa Jasmina GitHub repository where users will be able to respond to questions and spark new avenues to the project.
-
-The feedback gained will inform new types of interactions and approaches to the future smart home, that will reflow in the Casa Jasmina design process.
-    </p>
+  <div class="row text-intro ">
+    <div class="medium-10 medium-offset-1 small-12 columns  ">
+      <p id="text-intro">
+        <p>
+        An interactive installation and exhibition about smart homes, and user response to  pervasive technologies entering our private spaces. The installation aims to further  the research that Casa Jasmina is carrying out regarding social home environment from an  open design and user centered perspective.
+        </p>
+        <p>
+        In order to deeply understand the impact of IoT in the house for the possible stakeholders, an interactive system of four mini-printers will be set up at Palazzo Clerici.
+        Each printer will be connected to Casa Jasmina GitHub repository where users will be able to respond to questions and spark new avenues to the project.
+        The feedback gained will inform new types of interactions and approaches to the future smart home, that will reflow in the Casa Jasmina design process.
+        </p>
+      </p>
+    </div>
   </div>
 
   <div class="row ">
@@ -73,7 +76,7 @@ The feedback gained will inform new types of interactions and approaches to the 
   <!--CLOSING MENU SECTION-->
   <hr>
 
-  <div class="container row">
+  <div class=" row">
     <div class="medium-10 medium-offset-1 columns">
 
   <div class="row" id="privacy">
@@ -206,11 +209,11 @@ The feedback gained will inform new types of interactions and approaches to the 
     <div class="row">
       <div class="medium-7 columns">
         <div class="title">
-          <h1>thanks for your contribution</h1>
+          <h1>Thanks for your contribution</h1>
         </div>
         <div class="subtitle">
-          <p>thanks for taking the time to respond to this question</p>
-          <p>Subscribe to Casa Jasmina newsletter to stay updated about the next events</p>
+          <p>Thanks for taking the time to respond to this question</p>
+          <p>Subscribe to Casa Jasmina's newsletter to stay updated about the next events</p>
         </div>
       </div>
       <div class="medium-5 columns">
