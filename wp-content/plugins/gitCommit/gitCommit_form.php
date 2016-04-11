@@ -6,7 +6,13 @@
 
   <div class="row text-intro">
     <p id="text-intro">
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      An interactive installation and exhibition about smart homes, and user response to  pervasive technologies entering our private spaces. The installation aims to further  the research that Casa Jasmina is carrying out regarding social home environment from an  open design and user centered perspective.
+
+In order to deeply understand the impact of IoT in the house for the possible stakeholders, an interactive system of four mini-printers will be set up at Palazzo Clerici.
+
+Each printer will be connected to Casa Jasmina GitHub repository where users will be able to respond to questions and spark new avenues to the project.
+
+The feedback gained will inform new types of interactions and approaches to the future smart home, that will reflow in the Casa Jasmina design process.
     </p>
   </div>
 
@@ -195,7 +201,7 @@
     </div>
   </div>
 
-<div id="subscription" class="">
+<div id="subscription" class="hide">
   <div class="container" id="subscriptioninside">
     <div class="row">
       <div class="medium-7 columns">
@@ -285,8 +291,6 @@
             });
 
 
-
-
             var over;
 
             $('#subscriptioninside').mouseenter(function(){
@@ -305,14 +309,8 @@
               $("#subscription").addClass("hide");
             });
 
-
-
             function clearForms(){
               $('form').trigger("reset");
             }
-
-
-
-
 
       </script>
