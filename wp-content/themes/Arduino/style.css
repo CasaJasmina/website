@@ -285,7 +285,7 @@ position: relative;
         text-align: center;
         background-color: #ECF1F1;
         position: relative;
-        padding-bottom: 16%;
+        padding-bottom: 6%;
     }
     .custom-block:hover {
         background-color: #7fcbcd;
@@ -1384,6 +1384,8 @@ margin-right: 0.5em;
             top: 35px;
         }
     }
+
+
     /* GIT COMMIT CSS */
 
     .header-git-commit {
