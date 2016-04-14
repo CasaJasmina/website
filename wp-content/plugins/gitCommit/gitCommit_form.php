@@ -13,7 +13,9 @@
         <p>
         In order to deeply understand the impact of IoT in the house for the possible stakeholders, an interactive system of four mini-printers will be set up at Palazzo Clerici.
         Each printer will be connected to Casa Jasmina GitHub repository where users will be able to respond to questions and spark new avenues to the project.
-        The feedback gained will inform new types of interactions and approaches to the future smart home, that will reflow in the Casa Jasmina design process.
+        The feedback gained will inform new types of interactions and approaches to the future smart home, that will reflow in the Casa Jasmina design process.</br></br>
+
+        GIT-COMMIT has been developed with <a href="http://www.arduino.cc/en/Main/ArduinoMKR1000">Genuino MKR1000</a>, a powerful board that combines Genuino Zero features and Wi-Fi shield to create <a href="https://create.arduino.cc/iot/">IoT projects</a>.
         </p>
       </p>
     </div>
