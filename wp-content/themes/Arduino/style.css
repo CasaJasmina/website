@@ -1680,3 +1680,10 @@ textarea, textarea:focus {
     .text-intro {
         font-size: 1.1em;
     }
+
+    .ss-opt-actions{
+      visibility: hidden;
+    }
+    .ss-response-footer{
+      visibility: hidden;
+    }
