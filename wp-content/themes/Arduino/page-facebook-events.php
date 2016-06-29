@@ -75,19 +75,20 @@ get_header(); ?>
 					</a>
 
 					<div class="fb-container">
-					<div class="Back-cricle-day">
-								<p class="facebook-day">
-								<?php echo $event_start_day  ?>
-								<span class="th">
-							<?php echo	$event_start_th ?>
-						</span>
-							</p>
-						</div>
-						<p class="fb-month">
-						<?php echo $event_start_month ?>
-					</p>
+						<div class="Background-date">
+								<p class="facebook-date">
+									<?php echo $event_start_month ?>
+									<?php echo $event_start_day  ?>
+										<span class="th">
+											<?php echo	$event_start_th ?>
+										</span>
+									</p>
+								</div>
+							</div>
 
-			</div></div>
+
+
+		</div>
 
 			<?php endwhile; ?>
 		</div>
