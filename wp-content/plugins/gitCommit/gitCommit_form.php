@@ -31,53 +31,49 @@
     </div>
   </div>
 
-  <div class="row git-commit-icons">
-    <div class="medium-10 medium-offset-1 small-12 columns">
+  <div style="display:flex;justify-content:center;align-items:flex-end">
+    <div style="margin:0 20px">
+      <a href="http://www.labiennale.org/">
+        <div >
+          <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/logo_biennale.png' />
+        </div>
+      </a>
+    </div>
 
-      <div class="large-2 small-2 columns topics">
-        <a href="#privacy" class="red">
-          <div >
-            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/logo_biennale.png' />
-          </div>
-        </a>
-      </div>
+    <div style="margin:0 20px">
+      <a href="http://www.mfa.fi/">
+        <div>
+          <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/mfa.png' />
+        </div>
+      </a>
+    </div>
 
-      <div class="large-2 small-2 column topics">
-        <a href="#familiar" class=" yellow">
-          <div>
-            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/mfa.png' />
-          </div>
-        </a>
-      </div>
+    <div style="margin:0 20px">
+      <a href="http://frombordertohome.fi/">
+        <div >
+          <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/border.png' />
+        </div>
+      </a>
+    </div>
 
-      <div class="large-2 small-2 columns topics">
-        <a href="#open" class=" gold">
-          <div >
-            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/border.png' />
-          </div>
-        </a>
-      </div>
+    <div style="margin:0 20px">
+      <a href="http://www.finnisharchitecture.fi/author/editor/">
+        <div >
+          <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/archinfo.png' />
+        </div>
+      </a>
+    </div>
 
-      <div class="large-2 small-2 columns topics">
-        <a href="#open" class=" gold">
-          <div >
-            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/archinfo.png' />
-          </div>
-        </a>
-      </div>
-
-
-      <div class="large-2 small-2 columns topics ">
-        <a href="#social" class=" blue">
-          <div>
-            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/jasmina.png' />
-          </div>
-        </a>
-      </div>
-
+    <div style="margin:0 20px">
+      <a href="/">
+        <div>
+          <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/jasmina.png' />
+        </div>
+      </a>
     </div>
   </div>
   <!--CLOSING MENU SECTION-->
+
   <hr>
 
   <div class=" row">
