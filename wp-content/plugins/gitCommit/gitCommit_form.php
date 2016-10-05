@@ -33,7 +33,7 @@
 
   <div style="display:flex;justify-content:center;align-items:flex-end">
     <div style="margin:0 20px">
-      <a href="http://www.labiennale.org/">
+      <a href="http://www.labiennale.org/" target="_blank">
         <div >
           <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/logo_biennale.png' />
         </div>
@@ -41,7 +41,7 @@
     </div>
 
     <div style="margin:0 20px">
-      <a href="http://www.mfa.fi/">
+      <a href="http://www.mfa.fi/" target="_blank">
         <div>
           <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/mfa.png' />
         </div>
@@ -49,7 +49,7 @@
     </div>
 
     <div style="margin:0 20px">
-      <a href="http://frombordertohome.fi/">
+      <a href="http://frombordertohome.fi/" target="_blank">
         <div >
           <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/border.png' />
         </div>
@@ -57,14 +57,14 @@
     </div>
 
     <div style="margin:0 20px">
-      <a href="http://www.finnisharchitecture.fi/author/editor/">
+      <a href="http://www.finnisharchitecture.fi/author/editor/" target="_blank">
         <div >
           <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/archinfo.png' />
         </div>
       </a>
     </div>
 
-    <div style="margin:0 20px">
+    <div style="margin:0 20px" target="_blank">
       <a href="/">
         <div>
           <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/jasmina.png' />
