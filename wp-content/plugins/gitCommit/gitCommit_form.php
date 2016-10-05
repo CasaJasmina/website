@@ -32,7 +32,7 @@
   </div>
 
   <div class="row git-commit-icons">
-    <div class="large-12 small-12 columns large-centered">
+    <div class="medium-10 medium-offset-1 small-12 columns">
 
       <div class="large-2 small-2 columns topics">
         <a href="#privacy" class="red">
