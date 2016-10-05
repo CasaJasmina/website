@@ -4,72 +4,74 @@
 
   </div>
 
-  <div class="row text-intro ">
-    <div class="medium-10 medium-offset-1 small-12 columns  ">
+  <div class="row text-intro">
+    <div class="medium-10 medium-offset-1 small-12 columns">
       <p id="text-intro">
+        <h3>Society Lab / New Geographies</h3>
+        <p>8 October - Venice Architecture Biennale</p>
+        
+        <br>
+       
+        <h3>Groupness//Groupless</h3>
         <p>
-        An interactive installation and exhibition about smart homes, and user response to  pervasive technologies entering our private spaces. The installation aims to further  the research that Casa Jasmina is carrying out regarding social home environment from an  open design and user centered perspective.
+          Groupness//Groupless is an interactive data collection installation about physical communities, digital
+          communities and identity, aiming to inform us about the parameters that will define our personal and social
+          identities.
         </p>
         <p>
-        In order to deeply understand the impact of IoT in the house for the possible stakeholders, an interactive system of four mini-printers will be set up at Palazzo Clerici.
-        Each printer will be connected to Casa Jasmina GitHub repository where users will be able to respond to questions and spark new avenues to the project.
-        The feedback gained will inform new types of interactions and approaches to the future smart home, that will reflow in the Casa Jasmina design process.</br></br>
-
-        GIT-COMMIT has been developed with <a href="http://www.arduino.cc/en/Main/ArduinoMKR1000">Genuino MKR1000</a>, a powerful board that combines Genuino Zero features and Wi-Fi shield to create <a href="https://create.arduino.cc/iot/">IoT projects</a>.
+          With the rise of globalization and the internet digital revolution, borders between countries tend to blur,
+          common grounds are less related to geographical boundaries and divisions are being formed according to a
+          wide spectrum of parameters rather than geographical, such as fields of interests and opinion.
+         
+          <br></br>
+          Project by: Cecilia Danieli, Omri Revesz, Mariana Riobom
+          <br>
         </p>
       </p>
-    </div>
-  </div>
-
-  <div class="row ">
-    <div class="large-12 columns large-centered text-questions-header">
-      WE WOULD LOVE TO HAVE YOUR INPUT ON ONE OF THOSE TOPICS
     </div>
   </div>
 
   <div class="row git-commit-icons">
     <div class="large-12 small-12 columns large-centered">
 
-      <div class="large-3 small-3 columns topics">
+      <div class="large-2 small-2 columns topics">
         <a href="#privacy" class="red">
           <div >
-            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/Icon4.svg' />
-          </div>
-          <div >
-            PRIVACY
+            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/logo_biennale.png' />
           </div>
         </a>
       </div>
 
-      <div class="large-3 small-3 column topics">
+      <div class="large-2 small-2 column topics">
         <a href="#familiar" class=" yellow">
           <div>
-            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/Icon3.svg' />
-          </div>
-          <div>
-            FAMILIAR OBJECTS
+            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/mfa.png' />
           </div>
         </a>
       </div>
 
-      <div class="large-3 small-3 columns topics">
+      <div class="large-2 small-2 columns topics">
         <a href="#open" class=" gold">
           <div >
-            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/Icon2.svg' />
+            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/border.png' />
           </div>
-          <div>
-            OPEN DESIGN
+        </a>
+      </div>
+
+      <div class="large-2 small-2 columns topics">
+        <a href="#open" class=" gold">
+          <div >
+            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/archinfo.png' />
           </div>
         </a>
       </div>
 
 
-      <div class="large-3 small-3 columns topics ">
+      <div class="large-2 small-2 columns topics ">
         <a href="#social" class=" blue">
           <div>
-            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/Icon1.svg' />
+            <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/jasmina.png' />
           </div>
-          <div> SOCIAL INTERACTION</div>
         </a>
       </div>
 
@@ -81,87 +83,91 @@
   <div class=" row">
     <div class="medium-10 medium-offset-1 columns">
 
-  <div class="row" id="privacy">
-    <div class="large-12 columns">
-      <div class="background-text yellow title">
-        <h1 >DATA AND PRIVACY </h1>
+      <div class="row" id="perceptionVsFacts">
+        <div class="large-12 columns">
+          <div class="background-text yellow title">
+            <h1>PERCEPTION VS FACTS</h1>
+          </div>
+          <div class="background-text yellow">
+            <p style="text-transform:uppercase;">How many foreigners are currently living in your country?</p>
+          </div>
+          <p class="text-questions">
+            More commonly than what we think we overstate or lessen the number of foreigners in our countries. Why
+            would someone come to live in your home country?
+          </p>
+          <form class="question" name="perceptionVsFacts" method="post" action="javascript:void(0);">
+            <textarea class="text-form" type="text" name="perceptionVsFacts" >
+            </textarea>
+            <input type="submit" name="Submit" value="submit" class="button base primary"/>
+          </form>
+        </div>
       </div>
-      <div class="background-text yellow">
-        <p>IS THERE ANITHYNG ABOUT YOUR LIFE YOU WOULD NEVER SHARE ONLINE?</p>
+
+      <hr>
+
+      <div class="row" id="trust">
+        <div class="large-12 columns">
+          <div class="background-text orange title">
+            <h1>TRUST</h1>
+          </div>
+          <div class="background-text orange">
+            <p>What does it take for you to trust something or someone?</p>
+          </div>
+
+          <p class="text-questions">
+            What does it take to let your guard down? How do you know your web seller is trustworthy? How deeply do
+            you trust the 'Tripadvisor' reviews? What makes you trust somebody to stay at your home through 'airbnb'?
+          </p>
+
+          <form  class="question"  name="trust"  method="post" action="javascript:void(0);">
+            <textarea class="text-form" type="text" name="trust" ></textarea><br>
+            <input type="submit" name="Submit" value="submit" class="button base primary"/>
+          </form>
+        </div>
       </div>
-      <p class="text-questions">
-        In the house of the future would you share the information about your everyday activities and habits with other people? Are you willing to share the conversations you have with your relatives, flatmates, friends? The times you use an object or piece of  furniture? Your sleeping behaviours? The food you eat? The tv series you watch?
+
+      <hr>
+
+      <div class="row" id="identity">
+        <div class="large-12 columns">
+          <div class="background-text red title">
+            <h1>IDENTITY</h1>
+          </div>
+          <div class="background-text red">
+            <p>What does define your identity? Please order the following 'values' from the most to the less
+                valuable to you, in terms of defining who you are.</p>
+          </div>
+          <p class="text-questions">
+            <ol type="a">
+              <li>Country</li>
+              <li>Family</li>
+              <li>Friends</li>
+              <li>Home town</li>
+              <li>Language</li>
+              <li>National food</li>
+              <li>Religion</li>
+              <li>Other</li>
+            </ol>
+          </p>
+          <form class="question"  name="identity"  method="post" action="javascript:void(0);">
+            <textarea class="text-form" type="text" name="identity" ></textarea><br>
+            <input type="submit" name="Submit" value="submit" class="button base primary"/>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row text-intro">
+    <div class="medium-10 medium-offset-1 small-12 columns">
+      <p id="text-intro">
+        Society Lab transforms housing solutions into a digital platform, that will connect and merge request and
+        offer: asylum seekers with vacant house, optimising and managing all resources. The system consists a
+        first step towards integration: refugees won’t be dwelled in new quarters and segregated from society, while
+        locals will have the possibility to interact, and benefit from their presence.
       </p>
-      <form class="question" name="privacy"  method="post" action="javascript:void(0);">
-        <textarea class="text-form" type="text" name="privacy" >
-        </textarea>
-        <input type="submit" name="Submit" value="submit" class="button base primary"/>
-      </form>
     </div>
-  </div>
-
-    <hr>
-
-    <div class="row" id="familiar">
-      <div class="large-12 columns">
-        <div class="background-text orange title">
-          <h1>Familiar objects </h1>
-        </div>
-        <div class="background-text orange">
-          <p>What are three objects you would like to find at Casa Jasmina that would make the apartment more familiar to you?</p>
-        </div>
-
-        <p class="text-questions">
-          What objects make a space feel like a home? What makes it more familiar to you? What makes your stay in a place more comfortable? What sparks good memories at home?
-        </p>
-
-        <form  class="question"  name="familiar"  method="post" action="javascript:void(0);">
-          <textarea class="text-form" type="text" name="familiar" ></textarea><br>
-          <input type="submit" name="Submit" value="submit" class="button base primary"/>
-        </form>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="row" id="open">
-      <div class="large-12 columns">
-        <div class="background-text red title">
-          <h1>Open Design </h1>
-        </div>
-        <div class="background-text red">
-          <p>What do you imagine smart furniture to be like?  </p>
-        </div>
-        <p class="text-questions">
-          What does smart furniture mean to you?? How could a smart table enhance your work experience? Or your dining  experience? What information would you access if your bedroom or kitchen could talk with you or with each other?
-        </p>
-        <form class="question"  name="open"  method="post" action="javascript:void(0);">
-          <textarea class="text-form" type="text" name="open" ></textarea><br>
-          <input type="submit" name="Submit" value="submit" class="button base primary"/>
-        </form>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="row" id="social">
-      <div class="large-12 columns">
-        <div class="background-text gold title">
-          <h1 >Social interaction</h1>
-        </div>
-        <div class="background-text gold">
-          <p >Do you prefer to communicate with text, voice or video? </p>
-        </div>
-        <p class="text-questions">
-          What do you use to communicate with your friends? How many hours a day are you on internet? Who’s the last person you contacted through the internet? Which part of your body you will use to communicate in the house of the future?
-        </p>
-        <form class="question" name="social" method="post" action="javascript:void(0);">
-          <textarea class="text-form" type="text" name="social" ></textarea><br>
-          <input type="submit" name="Submit" value="submit" class="button base primary"/>
-        </form>
-      </div>
-    </div>
-  </div>
   </div>
 
 
