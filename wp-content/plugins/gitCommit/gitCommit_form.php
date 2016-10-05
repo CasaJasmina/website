@@ -8,7 +8,7 @@
     <div class="medium-10 medium-offset-1 small-12 columns">
       
       <h3 style="margin-bottom:0">Society Lab / New Geographies</h3>
-      <p style="margin-top:0">8 October - Venice Architecture Biennale</p>
+      <p style="margin-top:0;margin-bottom:30px">8 October - Venice Architecture Biennale</p>
      
       <h3>Groupness//Groupless</h3>
       <p>
