@@ -4,34 +4,32 @@
 
   </div>
 
-  <div class="row text-intro">
+  <div class="row">
     <div class="medium-10 medium-offset-1 small-12 columns">
-      <p id="text-intro">
-        <h3 style="margin-bottom:0">Society Lab / New Geographies</h3>
-        <p style="margin-top:0">8 October - Venice Architecture Biennale</p>
-        
-        <br>
-       
-        <h3>Groupness//Groupless</h3>
-        <p>
-          An interactive data collection installation about physical communities, digital
-          communities and identity, aiming to inform us about the parameters that will define our personal and social
-          identities.
-        </p>
-        <p>
-          With the rise of globalization and the internet digital revolution, borders between countries tend to blur,
-          common grounds are less related to geographical boundaries and divisions are being formed according to a
-          wide spectrum of parameters rather than geographical, such as fields of interests and opinion.
-         
-          <br></br>
-          Project by: Cecilia Danieli, Omri Revesz, Mariana Riobom
-          <br>
-        </p>
+      
+      <h3 style="margin-bottom:0">Society Lab / New Geographies</h3>
+      <p style="margin-top:0">8 October - Venice Architecture Biennale</p>
+     
+      <h3>Groupness//Groupless</h3>
+      <p>
+        An interactive data collection installation about physical communities, digital
+        communities and identity, aiming to inform us about the parameters that will define our personal and social
+        identities.
       </p>
+      <p>
+        With the rise of globalization and the internet digital revolution, borders between countries tend to blur,
+        common grounds are less related to geographical boundaries and divisions are being formed according to a
+        wide spectrum of parameters rather than geographical, such as fields of interests and opinion.
+       
+        <br></br>
+        Project by: Cecilia Danieli, Omri Revesz, Mariana Riobom
+        <br>
+      </p>
+     
     </div>
   </div>
 
-  <div style="display:flex;justify-content:center;align-items:flex-end">
+  <div style="display:flex;justify-content:center;align-items:flex-end;margin:50px 0">
     <div style="margin:0 20px">
       <a href="http://www.labiennale.org/" target="_blank">
         <div >
@@ -155,7 +153,7 @@
     </div>
   </div>
 
-  <div class="row text-intro">
+  <div class="row">
     <div class="medium-10 medium-offset-1 small-12 columns">
       <p id="text-intro">
         Society Lab transforms housing solutions into a digital platform, that will connect and merge request and
