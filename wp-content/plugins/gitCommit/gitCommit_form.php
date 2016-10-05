@@ -7,14 +7,14 @@
   <div class="row text-intro">
     <div class="medium-10 medium-offset-1 small-12 columns">
       <p id="text-intro">
-        <h3>Society Lab / New Geographies</h3>
-        <p>8 October - Venice Architecture Biennale</p>
+        <h3 style="margin-bottom:0">Society Lab / New Geographies</h3>
+        <p style="margin-top:0">8 October - Venice Architecture Biennale</p>
         
         <br>
        
         <h3>Groupness//Groupless</h3>
         <p>
-          Groupness//Groupless is an interactive data collection installation about physical communities, digital
+          An interactive data collection installation about physical communities, digital
           communities and identity, aiming to inform us about the parameters that will define our personal and social
           identities.
         </p>
