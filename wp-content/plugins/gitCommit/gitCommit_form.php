@@ -64,7 +64,7 @@
       </a>
     </div>
 
-    <div style="margin:0 20px" target="_blank">
+    <div style="margin:0 20px">
       <a href="/">
         <div>
           <img src='<?php echo bloginfo('template_directory') ?>/images/git-commit/loghi/jasmina.png' />
