@@ -16,9 +16,6 @@
  * @subpackage Arduino
  * @since Arduino 1.0
  */
-global $ardu_sso;
-require_once("WP_Arduino_SSO.php");
-$ardu_sso = new WP_Arduino_SSO();
 
 add_editor_style( array( 'css/editor-style.css', 'genericons/genericons.css', 'fonts/fonts.css' ) );
 register_nav_menu( 'primary', __( 'Navigation Menu', 'arduino' ) );
@@ -229,6 +226,10 @@ class Nav_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 		$output .= $indent . '<li' . $id . $class_names .'>';
 
+		if ($item->attr_title == 'login') {
+			$item->url = $ardu_sso->create_login_url(false);
+		}
+
 		$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
 		$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
 		$attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
@@ -239,12 +240,12 @@ class Nav_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 			$item_output .= '<form class="header-search-form" action="'.$DeploySettingsURL.'" method="get"><input id="s" name="s" class="header-search-input" type="text" placeholder="Search Blog"><input type="submit" name="btnG" value="search"></form>';
 		} else {
-			if (isset ($ardu_sso) && $item->attr_title == 'login' && ($ardu_sso->is_logged_in() || $ardu_sso->login())) {
-				$res = $ardu_sso->get_user_profile ('avatar');
-				if (array_key_exists ('avatar', $res) == false || $res ['avatar'] == '')
+			if (isset ($ardu_sso) && $item->attr_title == 'login' && $ardu_sso->status == "loggedin") {
+				$res = $ardu_sso->get_user_profile (array("public"));
+				if (isset($res->public->avatar) || $res->public->avatar == '')
 					$avatar = $DeploySettingsSSOSite . '/img/user_default.png';
 				else
-					$avatar = $res ['avatar'];
+					$avatar = $res->public->avatar;
 
 				$item_output .= '<a href="#" class="userAvatar"><img src="'.$avatar.'" alt="userpicture"/></a><ul id="logout" class="dropdown-logout"><li><a class="logout" href="'.esc_url( wp_logout_url()).'">Sign out</a></li></ul>';
 			} else {
