@@ -17,8 +17,6 @@
  * @since Arduino 1.0
  */
 global $ardu_sso;
-require_once("WP_Arduino_SSO.php");
-$ardu_sso = new WP_Arduino_SSO();
 
 add_editor_style( array( 'css/editor-style.css', 'genericons/genericons.css', 'fonts/fonts.css' ) );
 register_nav_menu( 'primary', __( 'Navigation Menu', 'arduino' ) );

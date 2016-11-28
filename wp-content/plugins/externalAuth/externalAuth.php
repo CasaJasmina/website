@@ -13,20 +13,27 @@ License: GPLv3 or later
 require_once ABSPATH . 'deploy_settings.php';
 require_once 'Arduino_SSO.php';
 
+if ( !function_exists('is_user_logged_in') ) :
 function is_user_logged_in() {
 	global $ardu_sso;
     return $ardu_sso->status == "loggedin";
 }
+endif;
 
+
+if ( !function_exists('wp_get_current_user') ) :
 function wp_get_current_user() {
 	global $current_user;	
 	return $current_user;
 }
+endif;
 
+if ( !function_exists('is_user_logged_in') ) :
 function wp_validate_auth_cookie() {
 	global $current_user;
 	return $current_user->ID;
 }
+endif;
 
 add_filter('logout_url', 'ea_logout_url', 10, 2 );
 function ea_logout_url(){
