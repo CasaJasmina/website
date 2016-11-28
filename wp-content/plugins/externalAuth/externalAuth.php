@@ -52,15 +52,17 @@ function ea_authenticate() {
 			return FALSE;
 	}
 
-	$profile = $ardu_sso->get_user_profile(array('core', 'public', 'contact'));
+	if ($ardu_sso->status == "loggedin") {
+		$profile = $ardu_sso->get_user_profile(array('core', 'public', 'contact'));
 
-	$current_user = get_user_by( 'login', $profile->username);
-	$user_id = $current_user->ID;
+		$current_user = get_user_by( 'login', $profile->username);
+		$user_id = $current_user->ID;
 
-	if (!$user_id) {
-		$random_password = wp_generate_password( $length=12, $include_standard_special_chars=false );
-		$user_id = wp_create_user( $profile->username, $random_password, $profile->email );
-	} else {
-		wp_update_user(array('ID' => $user_id, 'user_email' => $profile->email));
+		if (!$user_id) {
+			$random_password = wp_generate_password( $length=12, $include_standard_special_chars=false );
+			$user_id = wp_create_user( $profile->username, $random_password, $profile->email );
+		} else {
+			wp_update_user(array('ID' => $user_id, 'user_email' => $profile->email));
+		}
 	}
 }

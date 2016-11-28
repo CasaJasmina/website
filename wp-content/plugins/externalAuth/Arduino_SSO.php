@@ -39,6 +39,7 @@ class Arduino_SSO {
 		$this->SSOLogout = $DeploySettingsSSOLogout;
 		$this->service = $service;
 		// Are we logged on the sso?
+
 		if (!isset($_COOKIE[$this->SSOCookie]) || ($_COOKIE[$this->SSOCookie]!=='true')) {
 			$this->status = "loggedout";
 			unset($_SESSION['ardu_sso_token']);
@@ -65,7 +66,7 @@ class Arduino_SSO {
 	}
 	// get_user_profile returns the required profile data
 	public function get_user_profile($fields) {
-		$scopes = join($fields, ",");
+		$scopes = join(",", $fields);
 		$headr = array();
 		$headr[] = 'Authorization: Bearer '.$_SESSION['ardu_sso_token'];
 		$ch = curl_init();
@@ -88,6 +89,7 @@ class Arduino_SSO {
 			$this->request_code();
 			return;
 		}
+
 		// We validate the state
 		$code = $_GET['code'];
 		$state = $_GET['state'];
@@ -95,6 +97,7 @@ class Arduino_SSO {
 		if ($state != $_SESSION['state']) {
 			return FALSE;
 		}
+
 		// We retrieve the access_token
 		$token = $this->request_token($code);
 		// Not sure what does this bit do. Maybe cleaning up?
