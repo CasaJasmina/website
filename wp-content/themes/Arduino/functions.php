@@ -20,7 +20,7 @@ global $ardu_sso;
 require_once("WP_Arduino_SSO.php");
 $ardu_sso = new WP_Arduino_SSO();
 
-add_editor_style( array( 'css/editor-style.css', 'genericons/genericons.css', 'fonts/fonts.css' ) );
+add_editor_style( array( 'css/editor-style.css', 'genericons/genericons.css' ) );
 register_nav_menu( 'primary', __( 'Navigation Menu', 'arduino' ) );
 
 add_theme_support( 'post-thumbnails' );
@@ -103,9 +103,6 @@ endif;
  * @since Casa Jasmina 1.0
  */
 function arduino_scripts_styles() {
-
-	// Add Arduino fonts, used in the main stylesheet.
-	wp_enqueue_style( 'arduino-fonts', get_template_directory_uri() . '/fonts/fonts.css', array(), null );
 
 	// Add Generic Icons stylesheet.
 	wp_enqueue_style( 'generic-icons', get_template_directory_uri() . '/genericons/genericons.css', array(), null );
