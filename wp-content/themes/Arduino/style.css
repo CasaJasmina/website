@@ -6,7 +6,7 @@ Author: Stefania - Lorenzo
 */
 
 body {
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     color: #4E5B61;
     font-size: 1em;
     line-height: 1.625;
@@ -177,7 +177,7 @@ input.header-search-input {
     line-height: normal;
     color: #9E846D;
     font-size: 16px;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     box-shadow: none;
 }
@@ -193,7 +193,7 @@ input.header-search-input::-webkit-input-placeholder {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     line-height: 21px;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
     border: 1px solid transparent;
 }
@@ -227,7 +227,7 @@ input[type="button"] {
     top: 0;
     position: relative;
     height: 38px;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 15px;
@@ -293,7 +293,7 @@ position: relative;
 .custom-block span.title {
     text-transform: uppercase;
     color: #11868B;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.4rem;
     line-height: 1.8rem;
     letter-spacing: .1rem;
@@ -340,7 +340,7 @@ span.title {
     position: relative;
     float: right;
     top: 10px;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     line-height: 18px;
 }
@@ -386,7 +386,7 @@ span.title {
     background-color: white;
     padding: 0px 4px;
     text-transform: uppercase;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 28px;
     font-weight: 600;
     font-size: 20px;
@@ -404,7 +404,7 @@ a.Uncategorized span > span {
     color: #9E846D;
 }
 a.event span.date {
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     color: white;
     background-color: #e67e22;
@@ -446,7 +446,7 @@ a.event span.date {
     background-color: white;
     padding: 0px 4px;
     text-transform: uppercase;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 42px;
     font-weight: 600;
     font-size: 30px;
@@ -455,7 +455,7 @@ a.event span.date {
     background-color: white;
     padding: 0px 4px;
     text-transform: uppercase;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 42px;
     font-weight: 600;
     font-size: 30px;
@@ -464,7 +464,7 @@ a.event span.date {
     background-color: white;
     padding: 0px 4px;
     text-transform: uppercase;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 42px;
     font-weight: 600;
     font-size: 30px;
@@ -529,7 +529,7 @@ footer#main {
     margin-bottom: 0px;
 }
 .monospace {
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 15px;
@@ -549,7 +549,7 @@ footer#main {
 }
 footer a, footer a:focus {
     color: white;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 15px;
@@ -581,7 +581,7 @@ footer .inline-list {
     color: #9e846d;
     font-size: 17px;
     text-transform: uppercase;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-style: normal;
     margin-bottom: 1em;
@@ -632,7 +632,7 @@ footer .inline-list {
     color: #cccccc;
 }
 blockquote p {
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2em;
     padding: 10px;
     color: #95A5A6;
@@ -657,7 +657,7 @@ blockquote p {
     background-color: white;
     padding: 0px 4px;
     text-transform: uppercase;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 35px;
     font-weight: 600;
     font-size: 25px;
@@ -686,7 +686,7 @@ blockquote p {
     margin-top: 20px;
 }
 .rssfeed li >:first-child {
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     color: #E67E22;
     font-size: 30px;
     margin-top: 20px;
@@ -720,7 +720,7 @@ blockquote p {
     margin-top: 20px;
 }
 .ss-form div.ss-form-entry>input {
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -731,7 +731,7 @@ blockquote p {
     border: none;
 }
 .ss-form div.ss-form-entry>textarea {
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -764,7 +764,7 @@ input:-ms-input-placeholder {
 }
 .ss-form .ss-section-title {
     color: #9e846d;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 17px;
@@ -772,7 +772,7 @@ input:-ms-input-placeholder {
     text-transform: uppercase;
 }
 .ss-form .ss-q-title {
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 15px;
@@ -820,7 +820,7 @@ input[type="checkbox"] {
     font-size: .9em;
     font-style: italic;
     font-weight: 400;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     text-transform: lowercase !important;
     color: #9E856E;
 }
@@ -886,14 +886,14 @@ input[type="checkbox"] {
 
 .excerpt {
     color: #58595B;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     font-style: italic;
     font-size: 18px;
 }
 .project_sidebar_heading {
     color: #9E856E;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-style: none;
     font-size: 16px;
@@ -925,7 +925,7 @@ input[type="checkbox"] {
 .fb-month {
     color: white;
     text-transform: uppercase;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
     font-weight: 600;
     float: right;
@@ -952,7 +952,7 @@ input[type="checkbox"] {
     text-align: right;
     color: white;
     text-transform: uppercase;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.7em;
     margin-top: 5px;
     margin-right: 13px !important;
@@ -960,7 +960,7 @@ input[type="checkbox"] {
 .fb-month-single-event {
     color: #4E5B61;
     text-transform: uppercase;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
     font-weight: 600;
     float: left;
@@ -983,7 +983,7 @@ input[type="checkbox"] {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.3em;
     margin: 0px !important;
 }
@@ -1000,7 +1000,7 @@ input[type="checkbox"] {
 }
 .start-single-event {
     text-transform: uppercase;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.4em;
     color: #E67E22;
     border: solid 2px;
@@ -1035,7 +1035,7 @@ input[type="checkbox"] {
     .menu-item a {
         color: #9E846D;
         text-transform: uppercase;
-        font-family: "'Source Sans Pro', sans-serif";
+        font-family: 'Source Sans Pro', sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 16px;
@@ -1178,7 +1178,7 @@ input[type="checkbox"] {
         font-size: 14px;
         text-transform: uppercase;
         font-size: 16px;
-        font-family: "'Source Sans Pro', sans-serif";
+        font-family: 'Source Sans Pro', sans-serif;
         font-weight: 600;
     }
     ul.sub-menu a {
@@ -1300,7 +1300,7 @@ input[type="checkbox"] {
         background-color: white;
         padding: 0px 4px;
         text-transform: uppercase;
-        font-family: "'Source Sans Pro', sans-serif";
+        font-family: 'Source Sans Pro', sans-serif;
         line-height: 42px;
         font-weight: 600;
         font-size: 20px !important;
@@ -1366,7 +1366,7 @@ input[type="checkbox"] {
         background-color: white;
         padding: 0px 4px;
         text-transform: uppercase;
-        font-family: "'Source Sans Pro', sans-serif";
+        font-family: 'Source Sans Pro', sans-serif;
         font-weight: 600;
         font-size: 20px !important;
         line-height: 35px !important;
@@ -1408,7 +1408,7 @@ input[type="checkbox"] {
     margin: 40px;
 }
 .text-questions-header {
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     color: #998478;
     font-size: 1.4em;
     text-align: center;
@@ -1447,7 +1447,7 @@ hr {
     box-shadow: 15px 0 0 #D35400, -15px 0 0 #D35400;
 }
 .background-text p {
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-style: normal;
@@ -1461,7 +1461,7 @@ hr {
     margin-bottom: 7px;
 }
 .background-text h1 {
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     font-style: normal;
     text-transform: uppercase;
@@ -1472,7 +1472,7 @@ hr {
     display: inline;
 }
 .text-questions {
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     color: #9A8478;
 }
 textarea.text-form {
@@ -1480,7 +1480,7 @@ textarea.text-form {
     height: 150px;
     background-color: #F2F1F0;
     border: none;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     color: #4E5B61;
     font-size: 1em;
     line-height: 1.625;
@@ -1490,13 +1490,13 @@ textarea.text-form {
 }
 .buttonGit:hover, .buttonGit:active, .buttonGit:focus, .buttonGit:visited {
     color: #4E5B61 !important;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     box-shadow: 0 4px #BDC7C7 !important;
     padding: 10px 70px;
 }
 .button.buttonGit {
     text-transform: uppercase;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: #F2F1F0;
     box-shadow: 0 6px #BDC7C7;
     color: #4E5B61 !important;
@@ -1633,7 +1633,7 @@ input[type=email], input[type=number], input[type=password], input[type=search],
     margin: 0;
     vertical-align: top;
     border: none;
-    font-family: "'Source Sans Pro', sans-serif";
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.1em;
     display: -ms-flexbox;
     display: flex;
