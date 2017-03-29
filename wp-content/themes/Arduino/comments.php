@@ -77,7 +77,7 @@
 <h3 id="respond">Leave a Reply</h3>
 
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
-<p>You must be <a href="<?php global $DeploySettingsCASSite; echo $DeploySettingsCASSite ?>/login/?service=<?php echo 'http://' . $_SERVER ['SERVER_NAME'] ?>/wp-login.php?redirect_to=<?php urlencode(the_permalink()); ?>">logged in with your Arduino account</a> to post a comment.</p>
+<!--<p>You must be <a href="<?php global $DeploySettingsCASSite; echo $DeploySettingsCASSite ?>/login/?service=<?php echo 'http://' . $_SERVER ['SERVER_NAME'] ?>/wp-login.php?redirect_to=<?php urlencode(the_permalink()); ?>">logged in with your Arduino account</a> to post a comment.</p>-->
 <?php else : ?>
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">

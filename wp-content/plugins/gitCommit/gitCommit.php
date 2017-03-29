@@ -5,7 +5,7 @@
  * Description: Open new issue on github
  * Version: 0.1
  * Author: Lorenzo Romagnoli
- * Author URI: casajasmina.arduino.cc
+ * Author URI: casajasmina.cc
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of

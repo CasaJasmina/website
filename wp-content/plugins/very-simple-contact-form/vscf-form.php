@@ -118,7 +118,7 @@ function vscf_shortcode($vscf_atts) {
 			$message = $form_data['form_name'] . "\r\n\r\n" . $form_data['email'] . "\r\n\r\n" . $form_data['form_message'] . "\r\n\r\n" . sprintf( esc_attr__( 'IP: %s', 'very-simple-contact-form' ), vscf_get_the_ip() );
 			$headers = "Content-Type: text/plain; charset=UTF-8" . "\r\n";
 //			$headers .= "Content-Transfer-Encoding: 8bit" . "\r\n";
-			$headers .= "From: ".$form_data['form_name']." <casajasmina_info@arduino.cc>" . "\r\n";
+			$headers .= "From: ".$form_data['form_name']." <d.gomba@officine.cc>" . "\r\n";
 			$headers .= "Reply-To: <".$form_data['email'].">" . "\r\n";
 			wp_mail($to, $subject, $message, $headers);
 			$result = $vscf_atts['message_success'];

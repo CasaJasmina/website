@@ -5,7 +5,7 @@
  * Description: A widget that serves as an cj_basic for developing more advanced widgets.
  * Version: 0.1
  * Author: Lorenzo Romagnoli
- * Author URI: casajasmina.arduino.cc
+ * Author URI: casajasmina.cc
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
