@@ -22,7 +22,7 @@
 					</p>
 
 					<div class="s-logo">
-						<a href="http://www.toolboxoffice.it" target="_blank">
+						<a href="/" target="_blank">
 						<img class="logoleft toolbox" src="<?php echo get_template_directory_uri(); ?>/images/s_logos/officine innesto.png">
 						</a>
 					</div>
